@@ -1,0 +1,2 @@
+org.jsoup.nodes.DocumentTypeTest#constructorValidationThrowsExceptionOnBlankName
+org.jsoup.nodes.DocumentTypeTest#outerHtmlGeneration

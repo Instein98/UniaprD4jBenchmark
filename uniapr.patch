@@ -1,0 +1,54 @@
+diff --git a/pom.xml b/pom.xml
+index 5a08acd..16d8728 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -6,7 +6,7 @@
+ 
+     <groupId>org.uniapr</groupId>
+     <artifactId>uniapr-plugin</artifactId>
+-    <version>1.0-SNAPSHOT</version>
++    <version>profiler-only</version>
+ 
+     <packaging>maven-plugin</packaging>
+ 
+diff --git a/src/main/java/org/uniapr/PRFEntryPoint.java b/src/main/java/org/uniapr/PRFEntryPoint.java
+index 3be5a2d..472e7bd 100644
+--- a/src/main/java/org/uniapr/PRFEntryPoint.java
++++ b/src/main/java/org/uniapr/PRFEntryPoint.java
+@@ -173,6 +173,7 @@ public class PRFEntryPoint {
+         final List<String> appClassNames = retrieveApplicationClassNames();
+         ProfilerResults profilerResults =
+                 ProfilerDriver.runProfiler(defaultProcessArgs, appClassNames, this.debug, this.d4jAllTestsFile);
++        System.exit(0);
+         final Map<String, Long> testsTiming = profilerResults.getTestsTiming();
+         final PraPRTestComparator comparator =
+                 new PraPRTestComparator(testsTiming, profilerResults.getIsFailingTestPredicate());
+diff --git a/src/main/java/org/uniapr/agent/HotSwapAgent.java b/src/main/java/org/uniapr/agent/HotSwapAgent.java
+index 2119b5f..40ed3c1 100644
+--- a/src/main/java/org/uniapr/agent/HotSwapAgent.java
++++ b/src/main/java/org/uniapr/agent/HotSwapAgent.java
+@@ -19,7 +19,7 @@ public class HotSwapAgent
+ 		System.out.println("Installing UniAPR agent");
+ 		instrumentation = inst;
+ 		try {
+-			instrumentation.appendToBootstrapClassLoaderSearch(new JarFile(System.getProperty("user.home") + "/.m2/repository/org/uniapr/uniapr-plugin/1.0-SNAPSHOT/uniapr-plugin-1.0-SNAPSHOT.jar"));
++			instrumentation.appendToBootstrapClassLoaderSearch(new JarFile(System.getProperty("user.home") + "/.m2/repository/org/uniapr/uniapr-plugin/profiler-only/uniapr-plugin-profiler-only.jar"));
+ 		} catch (Throwable t){
+ 			t.printStackTrace();
+ 		}
+diff --git a/src/main/java/org/uniapr/profiler/ProfilerDriver.java b/src/main/java/org/uniapr/profiler/ProfilerDriver.java
+index 5ff8575..8477261 100644
+--- a/src/main/java/org/uniapr/profiler/ProfilerDriver.java
++++ b/src/main/java/org/uniapr/profiler/ProfilerDriver.java
+@@ -50,9 +50,9 @@ public class ProfilerDriver {
+             if (arguments.getDebug()){
+                 List<String> failedTests = runner.getFailingTestNames();
+                 if (failedTests.size() > 0){
+-                    System.out.println("Profiler failed tests:");
++                    // System.out.println("Profiler failed tests:");
+                     for (String failedTest: runner.getFailingTestNames()) {
+-                        System.out.println("    " + failedTest);
++                        System.out.println("Profiler failed test: " + failedTest);
+                     }
+                 } else {
+                     System.out.println("Profiler passed all tests!");

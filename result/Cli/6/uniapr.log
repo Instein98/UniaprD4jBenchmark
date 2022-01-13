@@ -1,0 +1,21 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for commons-cli:commons-cli:jar:2.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.apache.commons:commons-parent:7, /home/yicheng/.m2/repository/org/apache/commons/commons-parent/7/commons-parent-7.pom, line 181, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-idea-plugin is missing. @ org.apache.commons:commons-parent:7, /home/yicheng/.m2/repository/org/apache/commons/commons-parent/7/commons-parent-7.pom, line 206, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------------< commons-cli:commons-cli >-----------------------
+[INFO] Building Commons CLI 2.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- uniapr-plugin:profiler-only:validate (default-cli) @ commons-cli ---
+Installing UniAPR agent
+Profiler is HERE!
+Found 0 test units
+Profiler passed all tests!
+Profiler is DONE!

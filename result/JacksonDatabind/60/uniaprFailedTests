@@ -1,0 +1,2 @@
+com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdTest#testWithAsValue
+com.fasterxml.jackson.databind.jsontype.TestDefaultWithCreators#testWithCreatorAndJsonValue

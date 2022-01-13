@@ -1,0 +1,4 @@
+com.fasterxml.jackson.databind.deser.TestJdkTypes#testStringBuilder
+com.fasterxml.jackson.databind.interop.TestCglibUsage#testSimpleProxied
+com.fasterxml.jackson.databind.interop.TestGroovyBeans#testSimpleDeserialization
+com.fasterxml.jackson.databind.interop.TestGroovyBeans#testSimpleSerialization
