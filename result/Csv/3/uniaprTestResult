@@ -1,7 +1,5 @@
-	at org.juniorg.apache.commons.csv.CSVFormatBuilderTest#testCopiedFormatIsEqualToOriginal PASS
-	at org.junit.Asseorg.apache.commons.csv.CSVFormatBuilderTest#testWithEscapeCRThrowsExceptions PASS
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.org.apache.commons.csv.CSVFormatBuilderTest#testCommentStart PASS
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(Cuorg.apache.commons.csv.CSVFormatBuilderTest#testWithQuoteLFThrowsException PASSstomRunnerExecutor.java:42)
+org.apache.commons.csv.CSVFormatBuilderTest#testCommentStart PASS
+org.apache.commons.csv.CSVFormatBuilderTest#testCopiedFormatIsEqualToOriginal PASS
 org.apache.commons.csv.CSVFormatBuilderTest#testCopiedFormatWithChanges PASS
 org.apache.commons.csv.CSVFormatBuilderTest#testDelimiter PASS
 org.apache.commons.csv.CSVFormatBuilderTest#testDelimiterSameAsCommentStartThrowsException PASS
@@ -24,6 +22,8 @@ org.apache.commons.csv.CSVFormatBuilderTest#testRecoardSeparator PASS
 org.apache.commons.csv.CSVFormatBuilderTest#testRFC4180 PASS
 org.apache.commons.csv.CSVFormatBuilderTest#testWithCommentStartCRThrowsException PASS
 org.apache.commons.csv.CSVFormatBuilderTest#testWithDelimiterLFThrowsException PASS
+org.apache.commons.csv.CSVFormatBuilderTest#testWithEscapeCRThrowsExceptions PASS
+org.apache.commons.csv.CSVFormatBuilderTest#testWithQuoteLFThrowsException PASS
 org.apache.commons.csv.CSVFormatTest#testEqualsCommentStart PASS
 org.apache.commons.csv.CSVFormatTest#testEqualsDelimiter PASS
 org.apache.commons.csv.CSVFormatTest#testEqualsEscape PASS

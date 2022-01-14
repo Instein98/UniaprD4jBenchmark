@@ -1,5 +1,3 @@
-	at org.apache.commons.cli.DefaultParser.haorg.apache.commons.cli.bug.BugsTest#test15648 PASS
-Exception found converting i to desired type: java.lang.IllegalAccessException; Uorg.apache.commons.cli.bug.BugsTest#test31148 PASS
 org.apache.commons.cli.ApplicationTest#testAnt PASS
 org.apache.commons.cli.ApplicationTest#testGroovy PASS
 org.apache.commons.cli.ApplicationTest#testLs PASS
@@ -149,6 +147,8 @@ org.apache.commons.cli.bug.BugsTest#test13666 PASS
 org.apache.commons.cli.bug.BugsTest#test13935 PASS
 org.apache.commons.cli.bug.BugsTest#test14786 PASS
 org.apache.commons.cli.bug.BugsTest#test15046 PASS
+org.apache.commons.cli.bug.BugsTest#test15648 PASS
+org.apache.commons.cli.bug.BugsTest#test31148 PASS
 org.apache.commons.cli.CommandLineTest#testGetOptionProperties PASS
 org.apache.commons.cli.CommandLineTest#testGetOptions PASS
 org.apache.commons.cli.CommandLineTest#testGetParsedOptionValue PASS

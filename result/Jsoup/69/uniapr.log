@@ -17,13 +17,6 @@ RUNNING: org.jsoup.helper.StringUtilTest.paddingInACan...
 RUNNING: org.jsoup.helper.StringUtilTest.isBlank... 
 RUNNING: org.jsoup.helper.StringUtilTest.join... 
 RUNNING: org.jsoup.helper.StringUtilTest.isWhitespace... 
-RUNNING: org.jsoup.safety.CleanerTest.testDropScript... 
-RUNNING: org.jsoup.safety.CleanerTest.testDropImageScript... 
-RUNNING: org.jsoup.safety.CleanerTest.testCleanJavascriptHref... 
-RUNNING: org.jsoup.safety.CleanerTest.testCleanAnchorProtocol... 
-RUNNING: org.jsoup.safety.CleanerTest.testRelaxed... 
-RUNNING: org.jsoup.safety.CleanerTest.testRemoveTags... 
-RUNNING: org.jsoup.safety.CleanerTest.testDropComments... 
 RUNNING: org.jsoup.safety.CleanerTest.simpleBehaviourTest... 
 RUNNING: org.jsoup.safety.CleanerTest.simpleBehaviourTest2... 
 RUNNING: org.jsoup.safety.CleanerTest.basicBehaviourTest... 
@@ -33,9 +26,8 @@ RUNNING: org.jsoup.safety.CleanerTest.testRemoveEnforcedAttributes...
 RUNNING: org.jsoup.safety.CleanerTest.testRemoveProtocols... 
 RUNNING: org.jsoup.safety.CleanerTest.whitelistedProtocolShouldBeRetained... 
 RUNNING: org.jsoup.safety.CleanerTest.testDropXmlProc... 
-RUNNING: org.jsoup.safety.CleanerTest.testDropsUnknownTags... 
-RUNNING: org.jsoup.safety.CleanerTest.testHandlesEmptyAttributes... 
-RUNNING: org.jsoup.safety.CleanerTest.testIsValidBodyHtml... 
+RUNNING: org.jsoup.safety.CleanerTest.testDropScript... 
+RUNNING: org.jsoup.safety.CleanerTest.testDropImageScript... 
 RUNNING: org.jsoup.safety.CleanerTest.testIsValidDocument... 
 RUNNING: org.jsoup.safety.CleanerTest.resolvesRelativeLinks... 
 RUNNING: org.jsoup.safety.CleanerTest.preservesRelativeLinksIfConfigured... 
@@ -49,6 +41,14 @@ RUNNING: org.jsoup.safety.CleanerTest.cleansInternationalText...
 RUNNING: org.jsoup.safety.CleanerTest.testScriptTagInWhiteList... 
 RUNNING: org.jsoup.safety.CleanerTest.bailsIfRemovingProtocolThatsNotSet... 
 RUNNING: org.jsoup.safety.CleanerTest.handlesControlCharactersAfterTagName... 
+RUNNING: org.jsoup.safety.CleanerTest.testRelaxed... 
+RUNNING: org.jsoup.safety.CleanerTest.testRemoveTags... 
+RUNNING: org.jsoup.safety.CleanerTest.testDropComments... 
+RUNNING: org.jsoup.safety.CleanerTest.testCleanJavascriptHref... 
+RUNNING: org.jsoup.safety.CleanerTest.testCleanAnchorProtocol... 
+RUNNING: org.jsoup.safety.CleanerTest.testDropsUnknownTags... 
+RUNNING: org.jsoup.safety.CleanerTest.testHandlesEmptyAttributes... 
+RUNNING: org.jsoup.safety.CleanerTest.testIsValidBodyHtml... 
 RUNNING: org.jsoup.helper.HttpConnectionTest.inputStream... 
 RUNNING: org.jsoup.helper.HttpConnectionTest.timeout... 
 RUNNING: org.jsoup.helper.HttpConnectionTest.data... 
@@ -134,8 +134,8 @@ RUNNING: org.jsoup.nodes.DocumentTest.testMetaCharsetUpdateUtf8...
 RUNNING: org.jsoup.nodes.DocumentTest.testClone... 
 RUNNING: org.jsoup.select.TraversorTest.filterSkipChildren... 
 RUNNING: org.jsoup.select.TraversorTest.filterSkipEntirely... 
-RUNNING: org.jsoup.select.TraversorTest.filterStop... 
 RUNNING: org.jsoup.select.TraversorTest.filterRemove... 
+RUNNING: org.jsoup.select.TraversorTest.filterStop... 
 RUNNING: org.jsoup.select.TraversorTest.filterVisit... 
 RUNNING: org.jsoup.helper.W3CDomTest.simpleConversion... 
 RUNNING: org.jsoup.helper.W3CDomTest.convertsGoogle... 
@@ -144,7 +144,12 @@ RUNNING: org.jsoup.helper.W3CDomTest.namespacePreservation...
 RUNNING: org.jsoup.helper.W3CDomTest.handlesInvalidAttributeNames... 
 RUNNING: org.jsoup.nodes.AttributeTest.html... 
 RUNNING: org.jsoup.nodes.AttributeTest.testWithSupplementaryCharacterInAttributeKeyAndValue... 
+RUNNING: org.jsoup.parser.HtmlParserTest.preservesSpaceInScript... 
+RUNNING: org.jsoup.parser.HtmlParserTest.doesNotCreateImplicitLists... 
+RUNNING: org.jsoup.parser.HtmlParserTest.discardsNakedTds... 
+RUNNING: org.jsoup.parser.HtmlParserTest.handlesNestedImplicitTable... 
 RUNNING: org.jsoup.parser.HtmlParserTest.handlesWhatWgExpensesTableExample... 
+RUNNING: org.jsoup.parser.HtmlParserTest.handlesTbodyTable... 
 RUNNING: org.jsoup.parser.HtmlParserTest.handlesImplicitCaptionClose... 
 RUNNING: org.jsoup.parser.HtmlParserTest.noTableDirectInTable... 
 RUNNING: org.jsoup.parser.HtmlParserTest.ignoresDupeEndTrTag... 
@@ -221,10 +226,6 @@ RUNNING: org.jsoup.parser.HtmlParserTest.convertsImageToImg...
 RUNNING: org.jsoup.parser.HtmlParserTest.handlesInvalidDoctypes... 
 RUNNING: org.jsoup.parser.HtmlParserTest.handlesManyChildren... 
 RUNNING: org.jsoup.parser.HtmlParserTest.handlesDeepStack... 
-RUNNING: org.jsoup.parser.HtmlParserTest.testInvalidTableContents... 
-RUNNING: org.jsoup.parser.HtmlParserTest.testNormalisesIsIndex... 
-RUNNING: org.jsoup.parser.HtmlParserTest.testReinsertionModeForThCelss... 
-RUNNING: org.jsoup.parser.HtmlParserTest.testUsingSingleQuotesInQueries... 
 RUNNING: org.jsoup.parser.HtmlParserTest.parsesComments... 
 RUNNING: org.jsoup.parser.HtmlParserTest.handlesTextArea... 
 RUNNING: org.jsoup.parser.HtmlParserTest.parsesSimpleDocument... 
@@ -243,11 +244,10 @@ RUNNING: org.jsoup.parser.HtmlParserTest.handlesEscapedData...
 RUNNING: org.jsoup.parser.HtmlParserTest.handlesDataOnlyTags... 
 RUNNING: org.jsoup.parser.HtmlParserTest.handlesTextAfterData... 
 RUNNING: org.jsoup.parser.HtmlParserTest.preservesSpaceInTextArea... 
-RUNNING: org.jsoup.parser.HtmlParserTest.preservesSpaceInScript... 
-RUNNING: org.jsoup.parser.HtmlParserTest.doesNotCreateImplicitLists... 
-RUNNING: org.jsoup.parser.HtmlParserTest.discardsNakedTds... 
-RUNNING: org.jsoup.parser.HtmlParserTest.handlesNestedImplicitTable... 
-RUNNING: org.jsoup.parser.HtmlParserTest.handlesTbodyTable... 
+RUNNING: org.jsoup.parser.HtmlParserTest.testInvalidTableContents... 
+RUNNING: org.jsoup.parser.HtmlParserTest.testNormalisesIsIndex... 
+RUNNING: org.jsoup.parser.HtmlParserTest.testReinsertionModeForThCelss... 
+RUNNING: org.jsoup.parser.HtmlParserTest.testUsingSingleQuotesInQueries... 
 RUNNING: org.jsoup.parser.HtmlParserTest.testSupportsNonAsciiTags... 
 RUNNING: org.jsoup.parser.HtmlParserTest.testSupportsPartiallyNonAsciiTags... 
 RUNNING: org.jsoup.parser.HtmlParserTest.testFragment... 
@@ -386,20 +386,20 @@ RUNNING: org.jsoup.nodes.NodeTest.unwrap...
 RUNNING: org.jsoup.nodes.NodeTest.before... 
 RUNNING: org.jsoup.nodes.NodeTest.after... 
 RUNNING: org.jsoup.select.CssTest.firstOfType... 
+RUNNING: org.jsoup.select.CssTest.nthChild_simple... 
+RUNNING: org.jsoup.select.CssTest.firstChild... 
+RUNNING: org.jsoup.select.CssTest.nthOfType_simple... 
+RUNNING: org.jsoup.select.CssTest.lastChild... 
+RUNNING: org.jsoup.select.CssTest.nthOfType_unknownTag... 
 RUNNING: org.jsoup.select.CssTest.nthLastChild_simple... 
 RUNNING: org.jsoup.select.CssTest.nthLastOfType_simple... 
 RUNNING: org.jsoup.select.CssTest.nthChild_advanced... 
 RUNNING: org.jsoup.select.CssTest.nthOfType_advanced... 
 RUNNING: org.jsoup.select.CssTest.nthLastChild_advanced... 
 RUNNING: org.jsoup.select.CssTest.nthLastOfType_advanced... 
+RUNNING: org.jsoup.select.CssTest.lastOfType... 
 RUNNING: org.jsoup.select.CssTest.onlyChild... 
 RUNNING: org.jsoup.select.CssTest.onlyOfType... 
-RUNNING: org.jsoup.select.CssTest.nthChild_simple... 
-RUNNING: org.jsoup.select.CssTest.firstChild... 
-RUNNING: org.jsoup.select.CssTest.nthOfType_unknownTag... 
-RUNNING: org.jsoup.select.CssTest.nthOfType_simple... 
-RUNNING: org.jsoup.select.CssTest.lastChild... 
-RUNNING: org.jsoup.select.CssTest.lastOfType... 
 RUNNING: org.jsoup.select.CssTest.root... 
 RUNNING: org.jsoup.select.CssTest.empty... 
 RUNNING: org.jsoup.select.SelectorTest.selectFirst... 
@@ -477,735 +477,92 @@ RUNNING: org.jsoup.nodes.AttributesTest.removeCaseSensitive...
 RUNNING: org.jsoup.nodes.AttributesTest.testSetKeyConsistency... 
 RUNNING: org.jsoup.nodes.AttributesTest.testIterator... 
 RUNNING: org.jsoup.parser.HtmlTreeBuilderStateTest.ensureArraysAreSorted... 
+2022-01-13 20:57:06.540:INFO::main: Logging initialized @766ms
+2022-01-13 20:57:06.560:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.581:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:40441}
+2022-01-13 20:57:06.581:INFO:oejs.Server:main: Started @807ms
 RUNNING: org.jsoup.integration.ConnectTest.doesPost... 
-2022-01-11 19:25:25.944:INFO::main: Logging initialized @815ms
-2022-01-11 19:25:25.964:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:25.986:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:46513}
-2022-01-11 19:25:25.986:INFO:oejs.Server:main: Started @857ms
-2022-01-11 19:25:26.078:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.082:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.084:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:45991}
-2022-01-11 19:25:26.084:INFO:oejs.Server:main: Started @955ms
+2022-01-13 20:57:06.663:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.666:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.667:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:36635}
+2022-01-13 20:57:06.667:INFO:oejs.Server:main: Started @893ms
 RUNNING: org.jsoup.integration.ConnectTest.sendsRequestBodyWithUrlParams... 
-
-java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:371)
-	at sun.net.www.protocol.http.HttpURLConnection.setNewClient(HttpURLConnection.java:776)
-	at sun.net.www.protocol.http.HttpURLConnection.setNewClient(HttpURLConnection.java:764)
-	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(HttpURLConnection.java:706)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1588)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1495)
-	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:734)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.helper.HttpConnection.post(HttpConnection.java:294)
-	at org.jsoup.integration.ConnectTest.sendsRequestBodyWithUrlParams(ConnectTest.java:147)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-2022-01-11 19:25:26.090:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.091:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.093:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:39937}
-2022-01-11 19:25:26.093:INFO:oejs.Server:main: Started @964ms
+2022-01-13 20:57:06.674:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.675:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.677:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:46499}
+2022-01-13 20:57:06.677:INFO:oejs.Server:main: Started @903ms
 RUNNING: org.jsoup.integration.ConnectTest.doesGet... 
-
-java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:288)
-	at org.jsoup.integration.ConnectTest.doesGet(ConnectTest.java:160)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-2022-01-11 19:25:26.095:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.096:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.097:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:36253}
-2022-01-11 19:25:26.097:INFO:oejs.Server:main: Started @968ms
+2022-01-13 20:57:06.679:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.680:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.682:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:33505}
+2022-01-13 20:57:06.682:INFO:oejs.Server:main: Started @908ms
 RUNNING: org.jsoup.integration.ConnectTest.doesPut... 
-
-java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.integration.ConnectTest.doesPut(ConnectTest.java:173)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-2022-01-11 19:25:26.099:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.101:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.683:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.684:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.685:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:37005}
+2022-01-13 20:57:06.686:INFO:oejs.Server:main: Started @911ms
 RUNNING: org.jsoup.integration.ConnectTest.postFiles... 
-2022-01-11 19:25:26.102:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:43521}
-2022-01-11 19:25:26.102:INFO:oejs.Server:main: Started @973ms
-
-java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.helper.HttpConnection.post(HttpConnection.java:294)
-	at org.jsoup.integration.ConnectTest.postFiles(ConnectTest.java:289)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-2022-01-11 19:25:26.105:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.107:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.108:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:42797}
-2022-01-11 19:25:26.116:INFO:oejs.Server:main: Started @987ms
+2022-01-13 20:57:06.688:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.689:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.691:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:35933}
+2022-01-13 20:57:06.691:INFO:oejs.Server:main: Started @917ms
 RUNNING: org.jsoup.integration.ConnectTest.multipleParsesOkAfterBufferUp... 
-
-java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.integration.ConnectTest.multipleParsesOkAfterBufferUp(ConnectTest.java:321)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-2022-01-11 19:25:26.118:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.119:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.120:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:40623}
-2022-01-11 19:25:26.120:INFO:oejs.Server:main: Started @992ms
+2022-01-13 20:57:06.702:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.703:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.704:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:41047}
+2022-01-13 20:57:06.704:INFO:oejs.Server:main: Started @930ms
 RUNNING: org.jsoup.integration.ConnectTest.bodyAfterParseThrowsValidationError... 
-
-java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.net.ConnectException>
-	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:28)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.integration.ConnectTest.bodyAfterParseThrowsValidationError(ConnectTest.java:331)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
-	... 17 more
-
-2022-01-11 19:25:26.123:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.124:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.125:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:35681}
-2022-01-11 19:25:26.125:INFO:oejs.Server:main: Started @996ms
+2022-01-13 20:57:06.705:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.706:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.708:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:45335}
+2022-01-13 20:57:06.708:INFO:oejs.Server:main: Started @934ms
 RUNNING: org.jsoup.integration.ConnectTest.bodyAndBytesAvailableBeforeParse... 
-
-java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.integration.ConnectTest.bodyAndBytesAvailableBeforeParse(ConnectTest.java:337)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-2022-01-11 19:25:26.127:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.128:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.129:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:36117}
-2022-01-11 19:25:26.129:INFO:oejs.Server:main: Started @1001ms
+2022-01-13 20:57:06.709:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.710:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.712:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:45141}
+2022-01-13 20:57:06.712:INFO:oejs.Server:main: Started @938ms
 RUNNING: org.jsoup.integration.ConnectTest.parseParseThrowsValidates... 
-
-java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.net.ConnectException>
-	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:28)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.integration.ConnectTest.parseParseThrowsValidates(ConnectTest.java:348)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
-	... 17 more
-
-2022-01-11 19:25:26.131:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.132:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.133:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:41635}
-2022-01-11 19:25:26.133:INFO:oejs.Server:main: Started @1004ms
+2022-01-13 20:57:06.714:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.715:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.716:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:34549}
+2022-01-13 20:57:06.716:INFO:oejs.Server:main: Started @942ms
 RUNNING: org.jsoup.integration.ConnectTest.multiCookieSet... 
-2022-01-11 19:25:26.134:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.135:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.136:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:37507}
-2022-01-11 19:25:26.136:INFO:oejs.Server:main: Started @1007ms
+2022-01-13 20:57:06.717:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.718:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.720:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:36903}
+2022-01-13 20:57:06.720:INFO:oejs.Server:main: Started @946ms
 RUNNING: org.jsoup.integration.ConnectTest.fetchURl... 
-
-java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:288)
-	at org.jsoup.Jsoup.parse(Jsoup.java:183)
-	at org.jsoup.integration.ConnectTest.fetchURl(ConnectTest.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-2022-01-11 19:25:26.138:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.138:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.139:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:41429}
-2022-01-11 19:25:26.140:INFO:oejs.Server:main: Started @1011ms
+2022-01-13 20:57:06.721:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.722:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.724:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:34769}
+2022-01-13 20:57:06.724:INFO:oejs.Server:main: Started @950ms
 RUNNING: org.jsoup.integration.ConnectTest.sendsRequestBody... 
-
-java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.helper.HttpConnection.post(HttpConnection.java:294)
-	at org.jsoup.integration.ConnectTest.sendsRequestBody(ConnectTest.java:133)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-2022-01-11 19:25:26.141:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.142:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.143:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:44551}
-2022-01-11 19:25:26.143:INFO:oejs.Server:main: Started @1014ms
+2022-01-13 20:57:06.725:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.727:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.728:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:38435}
+2022-01-13 20:57:06.728:INFO:oejs.Server:main: Started @954ms
 RUNNING: org.jsoup.integration.ConnectTest.canConnectToLocalServer... 
-2022-01-11 19:25:26.148:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.149:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.150:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:37087}
-2022-01-11 19:25:26.150:INFO:oejs.Server:main: Started @1021ms
+2022-01-13 20:57:06.734:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.736:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.737:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:43369}
+2022-01-13 20:57:06.737:INFO:oejs.Server:main: Started @963ms
 RUNNING: org.jsoup.integration.ConnectTest.fetchURIWithWihtespace... 
-
-java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:288)
-	at org.jsoup.integration.ConnectTest.fetchURIWithWihtespace(ConnectTest.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-2022-01-11 19:25:26.152:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.152:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.153:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:44455}
-2022-01-11 19:25:26.154:INFO:oejs.Server:main: Started @1025ms
+2022-01-13 20:57:06.739:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.740:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.742:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:35963}
+2022-01-13 20:57:06.742:INFO:oejs.Server:main: Started @968ms
 RUNNING: org.jsoup.integration.ConnectTest.exceptOnUnsupportedProtocol... 
-2022-01-11 19:25:26.155:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.156:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.157:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:40169}
-2022-01-11 19:25:26.157:INFO:oejs.Server:main: Started @1028ms
+2022-01-13 20:57:06.743:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.745:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.747:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:38455}
+2022-01-13 20:57:06.747:INFO:oejs.Server:main: Started @973ms
 RUNNING: org.jsoup.integration.ConnectTest.sendsRequestBodyJsonWithData... 
-
-java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.helper.HttpConnection.post(HttpConnection.java:294)
-	at org.jsoup.integration.ConnectTest.sendsRequestBodyJsonWithData(ConnectTest.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-2022-01-11 19:25:26.159:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
-2022-01-11 19:25:26.160:INFO:oejs.Server:main: jetty-9.2.22.v20170606
-2022-01-11 19:25:26.161:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:41821}
-2022-01-11 19:25:26.161:INFO:oejs.Server:main: Started @1032ms
+2022-01-13 20:57:06.750:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.751:INFO:oejs.Server:main: jetty-9.2.22.v20170606
+2022-01-13 20:57:06.753:INFO:oejs.ServerConnector:main: Started ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:42773}
+2022-01-13 20:57:06.753:INFO:oejs.Server:main: Started @979ms
 RUNNING: org.jsoup.integration.ConnectTest.sendsRequestBodyJsonWithoutData... 
-
-java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1223)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:730)
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:706)
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:299)
-	at org.jsoup.helper.HttpConnection.post(HttpConnection.java:294)
-	at org.jsoup.integration.ConnectTest.sendsRequestBodyJsonWithoutData(ConnectTest.java:120)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-2022-01-11 19:25:26.163:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
+2022-01-13 20:57:06.754:INFO:oejs.ServerConnector:main: Stopped ServerConnector@71be98f5{HTTP/1.1}{0.0.0.0:0}
 RUNNING: org.jsoup.select.ElementsTest.attributes... 
 RUNNING: org.jsoup.select.ElementsTest.is... 
 RUNNING: org.jsoup.select.ElementsTest.html... 
@@ -1262,37 +619,6 @@ RUNNING: org.jsoup.nodes.FormElementTest.controlsAddedAfterParseAreLinkedWithFor
 RUNNING: org.jsoup.nodes.FormElementTest.usesOnForCheckboxValueIfNoValueSet... 
 RUNNING: org.jsoup.nodes.FormElementTest.adoptedFormsRetainInputs... 
 RUNNING: org.jsoup.nodes.FormElementTest.removeFormElement... 
-
-java.lang.AssertionError: expected:<2> but was:<3>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:645)
-	at org.junit.Assert.assertEquals(Assert.java:631)
-	at org.jsoup.nodes.FormElementTest.removeFormElement(FormElementTest.java:164)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
 RUNNING: org.jsoup.nodes.FormElementTest.createsFormData... 
 RUNNING: org.jsoup.nodes.EntitiesTest.xhtml... 
 RUNNING: org.jsoup.nodes.EntitiesTest.notMissingMultis... 

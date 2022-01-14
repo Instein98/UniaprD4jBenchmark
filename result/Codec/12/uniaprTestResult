@@ -1,7 +1,3 @@
-	at org.junit.Assert.assertEquals(Aorg.apache.commons.codec.language.Caverphone2Test#testEndMb PASS
-	at org.junit.runnersorg.apache.commons.codec.language.Caverphone2Test#testSpecificationExamples PASS
-	at org.junit.runners.ParentRorg.apache.commons.codec.language.Caverphone2Test#testIsCaverphoneEquals PASS
-	at org.uniapr.prorg.apache.commons.codec.language.Caverphone2Test#testCaverphoneRevisitedRandomWords PASS
 org.apache.commons.codec.binary.Base32InputStreamTest#testAvailable FAIL
 org.apache.commons.codec.binary.Base32InputStreamTest#testBase32EmptyInputStreamMimeChuckSize PASS
 org.apache.commons.codec.binary.Base32InputStreamTest#testBase32EmptyInputStreamPemChuckSize PASS
@@ -234,10 +230,14 @@ org.apache.commons.codec.language.Caverphone2Test#testCaverphoneRevisitedExample
 org.apache.commons.codec.language.Caverphone2Test#testCaverphoneRevisitedRandomNameKLN1111111 PASS
 org.apache.commons.codec.language.Caverphone2Test#testCaverphoneRevisitedRandomNameTN11111111 PASS
 org.apache.commons.codec.language.Caverphone2Test#testCaverphoneRevisitedRandomNameTTA1111111 PASS
+org.apache.commons.codec.language.Caverphone2Test#testCaverphoneRevisitedRandomWords PASS
 org.apache.commons.codec.language.Caverphone2Test#testEncodeEmpty PASS
 org.apache.commons.codec.language.Caverphone2Test#testEncodeNull PASS
 org.apache.commons.codec.language.Caverphone2Test#testEncodeWithInvalidObject PASS
+org.apache.commons.codec.language.Caverphone2Test#testEndMb PASS
+org.apache.commons.codec.language.Caverphone2Test#testIsCaverphoneEquals PASS
 org.apache.commons.codec.language.Caverphone2Test#testLocaleIndependence PASS
+org.apache.commons.codec.language.Caverphone2Test#testSpecificationExamples PASS
 org.apache.commons.codec.language.ColognePhoneticTest#testAabjoe PASS
 org.apache.commons.codec.language.ColognePhoneticTest#testAaclan PASS
 org.apache.commons.codec.language.ColognePhoneticTest#testAychlmajrForCodec122 PASS

@@ -1,4 +1,3 @@
-	at junit.framework.com.fasterxml.jackson.databind.type.TestTypeResolution#testListViaClass PASS
 com.fasterxml.jackson.databind.access.TestSerAnyGetter#testDynaBean PASS
 com.fasterxml.jackson.databind.access.TestSerAnyGetter#testPrivate PASS
 com.fasterxml.jackson.databind.big.TestBiggerData#testReading PASS
@@ -1478,6 +1477,7 @@ com.fasterxml.jackson.databind.type.TestTypeFactoryWithClassLoader#testUsesCorre
 com.fasterxml.jackson.databind.type.TestTypeFactoryWithClassLoader#testUsesCorrectClassLoaderWhenThreadClassLoaderIsNull PASS
 com.fasterxml.jackson.databind.type.TestTypeFactoryWithClassLoader#testUsesFallBackClassLoaderIfNoThreadClassLoaderAndNoWithClassLoader PASS
 com.fasterxml.jackson.databind.type.TestTypeResolution#testGeneric PASS
+com.fasterxml.jackson.databind.type.TestTypeResolution#testListViaClass PASS
 com.fasterxml.jackson.databind.type.TestTypeResolution#testListViaTypeRef PASS
 com.fasterxml.jackson.databind.type.TestTypeResolution#testMaps PASS
 com.fasterxml.jackson.databind.type.TypeAliasesTest#testAliasResolutionIssue743 PASS

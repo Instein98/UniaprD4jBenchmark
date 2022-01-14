@@ -1,4 +1,3 @@
-	at org.uniapr.junit.runner.JUnitRunner.run(JUniorg.apache.commons.compress.archivers.tar.TarUtilsTest#testRoundTripOctal PASStRunner.java:106)
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesBSD PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesGNU PASS
 org.apache.commons.compress.archivers.ar.ArArchiveOutputStreamTest#testLongFileNamesCauseExceptionByDefault PASS
@@ -109,6 +108,7 @@ org.apache.commons.compress.archivers.tar.TarUtilsTest#testRoundEncoding PASS
 org.apache.commons.compress.archivers.tar.TarUtilsTest#testRoundTripNames PASS
 org.apache.commons.compress.archivers.tar.TarUtilsTest#testRoundTripOctalOrBinary12 PASS
 org.apache.commons.compress.archivers.tar.TarUtilsTest#testRoundTripOctalOrBinary8 PASS
+org.apache.commons.compress.archivers.tar.TarUtilsTest#testRoundTripOctal PASS
 org.apache.commons.compress.archivers.tar.TarUtilsTest#testTrailers PASS
 org.apache.commons.compress.archivers.tar.TarUtilsTest#testVerifyHeaderCheckSum PASS
 org.apache.commons.compress.archivers.tar.TarUtilsTest#testWriteNegativeBinary8Byte PASS

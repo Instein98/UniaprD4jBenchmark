@@ -1,4 +1,3 @@
-	at junit.framewororg.apache.commons.cli.PosixParserTest#testDoubleDash1 PASS
 org.apache.commons.cli.ApplicationTest#testAnt PASS
 org.apache.commons.cli.ApplicationTest#testGroovy PASS
 org.apache.commons.cli.ApplicationTest#testLs PASS
@@ -186,6 +185,7 @@ org.apache.commons.cli.PosixParserTest#testAmbiguousPartialLongOption3 PASS
 org.apache.commons.cli.PosixParserTest#testAmbiguousPartialLongOption4 PASS
 org.apache.commons.cli.PosixParserTest#testArgumentStartingWithHyphen PASS
 org.apache.commons.cli.PosixParserTest#testBursting PASS
+org.apache.commons.cli.PosixParserTest#testDoubleDash1 PASS
 org.apache.commons.cli.PosixParserTest#testLongWithEqualDoubleDash PASS
 org.apache.commons.cli.PosixParserTest#testLongWithEqualSingleDash PASS
 org.apache.commons.cli.PosixParserTest#testMissingArg PASS

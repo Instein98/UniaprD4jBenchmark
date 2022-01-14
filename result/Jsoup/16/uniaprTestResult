@@ -1,4 +1,3 @@
-	at org.junit.runners.org.jsoup.nodes.ElementTest#testClassDomMethods PASS
 org.jsoup.helper.DataUtilTest#testCharset PASS
 org.jsoup.helper.DataUtilTest#testQuotedCharset PASS
 org.jsoup.helper.HttpConnectionTest#caseInsensitiveHeaders PASS
@@ -56,6 +55,7 @@ org.jsoup.nodes.ElementTest#testAddNewHtml PASS
 org.jsoup.nodes.ElementTest#testAddNewText PASS
 org.jsoup.nodes.ElementTest#testAppendRowToTable PASS
 org.jsoup.nodes.ElementTest#testBrHasSpace PASS
+org.jsoup.nodes.ElementTest#testClassDomMethods PASS
 org.jsoup.nodes.ElementTest#testClassUpdates PASS
 org.jsoup.nodes.ElementTest#testClone PASS
 org.jsoup.nodes.ElementTest#testContainerOutput PASS

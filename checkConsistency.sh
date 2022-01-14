@@ -8,6 +8,7 @@ check_empty_and_delete(){
     fi
 }
 
+# 1st arg is file, 2nd arg is string
 file_contains_string(){
     if grep -q "$2" $1; then
         true
@@ -44,7 +45,10 @@ prepare_projects
 prepare_uniapr
 for proj in `ls projects_2.0`; do
     for id in `ls projects_2.0/$proj`; do
-        [ ! -d projects_2.0/$proj/$id ] && continue
+        # there are some irrelevant file under projects_2.0/$proj
+        if [ ! -d projects_2.0/$proj/$id ] || file_contains_string identicalProj "$proj-$id" ; then
+            continue
+        fi
 
         # prepare the result directory
         [ ! -d result/$proj/$id ] && mkdir -p result/$proj/$id
@@ -57,37 +61,44 @@ for proj in `ls projects_2.0`; do
             [ ! -d d4j_projects/$proj ] && mkdir -p d4j_projects/$proj
             echo checking out defects4j $proj-$id
             defects4j checkout -p $proj -v "$id"b -w d4j_projects/$proj/$id > /dev/null
-            cd d4j_projects/$proj/$id 
-            echo defects4j testing
-            defects4j test > d4j-test.log
+            # if checkout failed, further test make no sense
+            if [ -d d4j_projects/$proj/$id ];then
+                cd d4j_projects/$proj/$id 
+                echo defects4j testing
+                defects4j test > d4j-test.log
+            else 
+                echo *** Defects4j Checkout Failed!  ***
+            fi
         else
             echo d4j_projects/$proj/$id already exists, skip defects4j testing
         fi
-        cd $pwd/d4j_projects/$proj/$id 
-        sed -n 's/  - \(.*\)::\(.*\)/\1#\2/p' d4j-test.log | sort | uniq > d4jFailedTests
-        sed -n 's/\(.*\)(\(.*\))/\2#\1 PASS/p' all_tests | sort | uniq > d4jTestResult
-        for line in `cat d4jFailedTests`; do
-            sed -i "s/$line PASS/$line FAIL/" d4jTestResult
-        done
-        cp all_tests d4j-test.log d4jFailedTests d4jTestResult $pwd/result/$proj/$id
+        if [ -d $pwd/d4j_projects/$proj/$id ];then
+            cd $pwd/d4j_projects/$proj/$id 
+            sed -n 's/  - \(.*\)::\(.*\)/\1#\2/p' d4j-test.log | sort | uniq > d4jFailedTests
+            sed -n 's/\(.*\)(\(.*\))/\2#\1 PASS/p' all_tests | sort | uniq > d4jTestResult
+            for line in `cat d4jFailedTests`; do
+                sed -i "s/$line PASS/$line FAIL/" d4jTestResult
+            done
+            cp all_tests d4j-test.log d4jFailedTests d4jTestResult $pwd/result/$proj/$id
+        fi
         cd $pwd
         echo
 
         # run uniapr profiler
         echo processing $proj-$id for uniapr
         cd projects_2.0/$proj/$id
-        if [ ! -f uniaprTestResult ]; then
-            mvn clean test-compile -l mvn-test-compile.log
-            if file_contains_string mvn-test-compile.log "BUILD SUCCESS"; then
-                echo mvn test-compile succeed!
-            else 
-                echo mvn test-compile failed!
-            fi
+        #if [ ! -f uniaprTestResult ]; then
+            #mvn clean test-compile -l mvn-test-compile.log
+            #if file_contains_string mvn-test-compile.log "BUILD SUCCESS"; then
+            #    echo mvn test-compile succeed!
+            #else 
+            #    echo mvn test-compile failed!
+            #fi
             echo running uniapr for $proj-$id
             mvn org.uniapr:uniapr-plugin:profiler-only:validate -DrestartJVM=true -Dd4jAllTestsFile=$pwd/d4j_projects/$proj/$id/all_tests -Ddebug=true -l uniapr.log
-        else
-            echo uniapr.log already exists, skip running uniapr
-        fi
+        #else
+        #    echo uniapr.log already exists, skip running uniapr
+        #fi
         sed -n 's/Profiler failed test: \(.*\)\.\(..*\)/\1#\2/p' uniapr.log | sort | uniq > uniaprFailedTests
         sed -n 's/RUNNING: \(.*\)\.\(..*\)\.\.\. /\1#\2 PASS/p' uniapr.log | sort | uniq > uniaprTestResult
         for line in `cat uniaprFailedTests`; do

@@ -1,4 +1,3 @@
-	at org.org.jsoup.parser.ParserTest#parsesUnterminatedOption PASS
 org.jsoup.helper.DataUtilTest#testCharset PASS
 org.jsoup.helper.DataUtilTest#testQuotedCharset PASS
 org.jsoup.helper.HttpConnectionTest#caseInsensitiveHeaders PASS
@@ -126,6 +125,7 @@ org.jsoup.parser.ParserTest#parsesRoughAttributes PASS
 org.jsoup.parser.ParserTest#parsesSimpleDocument PASS
 org.jsoup.parser.ParserTest#parsesUnterminatedAttribute PASS
 org.jsoup.parser.ParserTest#parsesUnterminatedComments PASS
+org.jsoup.parser.ParserTest#parsesUnterminatedOption PASS
 org.jsoup.parser.ParserTest#parsesUnterminatedTag PASS
 org.jsoup.parser.ParserTest#parsesUnterminatedTextarea PASS
 org.jsoup.parser.ParserTest#testHeaderContents PASS

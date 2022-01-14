@@ -144,25 +144,6 @@ RUNNING: org.apache.commons.csv.CSVPrinterTest.testExcelPrintAllIterableOfLists.
 RUNNING: org.apache.commons.csv.CSVPrinterTest.testExcelPrinter1... 
 RUNNING: org.apache.commons.csv.CSVPrinterTest.testExcelPrinter2... 
 RUNNING: org.apache.commons.csv.CSVPrinterTest.testJdbcPrinter... 
-
-java.lang.AssertionError: Expected exception: java.lang.IllegalStateException
-	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:32)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
 RUNNING: org.apache.commons.csv.CSVPrinterTest.testMultiLineComment... 
 RUNNING: org.apache.commons.csv.CSVPrinterTest.testPrinter1... 
 RUNNING: org.apache.commons.csv.CSVPrinterTest.testPrinter2... 

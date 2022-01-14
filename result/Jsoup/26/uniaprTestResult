@@ -1,4 +1,3 @@
-	at org.junit.runorg.jsoup.parser.HtmlParserTest#reconstructFormattingElements PASS
 org.jsoup.helper.DataUtilTest#discardsSpuriousByteOrderMark PASS
 org.jsoup.helper.DataUtilTest#testCharset PASS
 org.jsoup.helper.DataUtilTest#testQuotedCharset PASS
@@ -216,6 +215,7 @@ org.jsoup.parser.HtmlParserTest#parsesUnterminatedTextarea PASS
 org.jsoup.parser.HtmlParserTest#preservesSpaceInScript PASS
 org.jsoup.parser.HtmlParserTest#preservesSpaceInTextArea PASS
 org.jsoup.parser.HtmlParserTest#reconstructFormattingElementsInTable PASS
+org.jsoup.parser.HtmlParserTest#reconstructFormattingElements PASS
 org.jsoup.parser.HtmlParserTest#testAFlowContents PASS
 org.jsoup.parser.HtmlParserTest#testFontFlowContents PASS
 org.jsoup.parser.HtmlParserTest#testHeaderContents PASS

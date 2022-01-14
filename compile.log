@@ -1,0 +1,1209 @@
+=== Cli-1 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-10 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-11 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-12 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-13 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-14 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-15 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-16 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-17 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-18 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-19 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-2 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-20 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-21 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-22 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-23 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-24 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-25 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-26 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-27 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-28 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-29 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-3 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-30 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-31 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-32 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-33 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-34 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-35 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-36 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-37 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-38 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-39 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-4 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-40 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-5 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-6 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-7 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-8 ===
+[JDK8] mvn test-compile succeed!
+
+=== Cli-9 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-1 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-10 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-11 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-12 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-13 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-14 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-15 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-16 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-17 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-18 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-2 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-3 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-4 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-5 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-6 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-7 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-8 ===
+[JDK8] mvn test-compile succeed!
+
+=== Codec-9 ===
+[JDK8] mvn test-compile succeed!
+
+=== Collections-25 ===
+[JDK8] mvn test-compile succeed!
+
+=== Collections-26 ===
+[JDK8] mvn test-compile failed!
+[JDK7] mvn test-compile succeed!
+
+=== Collections-27 ===
+[JDK8] mvn test-compile failed!
+[JDK7] mvn test-compile succeed!
+
+=== Collections-28 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-1 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-10 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-11 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-12 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-13 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-14 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-15 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-16 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-17 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-18 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-19 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-2 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-20 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-21 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-22 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-23 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-24 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-25 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-26 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-27 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-28 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-29 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-3 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-30 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-31 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-32 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-33 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-34 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-35 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-36 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-37 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-38 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-39 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-4 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-40 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-41 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-42 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-43 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-44 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-45 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-46 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-47 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-5 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-6 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-7 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-8 ===
+[JDK8] mvn test-compile succeed!
+
+=== Compress-9 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-1 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-10 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-11 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-12 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-13 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-14 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-15 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-16 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-2 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-3 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-4 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-5 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-6 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-7 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-8 ===
+[JDK8] mvn test-compile succeed!
+
+=== Csv-9 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-1 ===
+[JDK8] mvn test-compile failed!
+[JDK7] mvn test-compile failed!
+
+=== Gson-10 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-11 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-12 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-13 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-14 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-15 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-16 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-17 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-18 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-2 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-3 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-4 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-5 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-6 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-7 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-8 ===
+[JDK8] mvn test-compile succeed!
+
+=== Gson-9 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-1 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-10 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-11 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-12 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-13 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-14 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-15 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-16 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-17 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-18 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-19 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-2 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-20 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-21 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-22 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-23 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-24 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-25 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-26 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-3 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-4 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-5 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-6 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-7 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-8 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonCore-9 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-1 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-10 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-100 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-101 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-102 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-103 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-104 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-105 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-106 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-107 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-108 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-109 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-11 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-110 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-111 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-112 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-12 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-13 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-14 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-15 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-16 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-17 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-18 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-19 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-2 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-20 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-21 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-22 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-23 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-24 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-25 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-26 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-27 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-28 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-29 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-3 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-30 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-31 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-32 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-33 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-34 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-35 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-36 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-37 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-38 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-39 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-4 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-40 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-41 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-42 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-43 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-44 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-45 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-46 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-47 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-48 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-49 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-5 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-50 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-51 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-52 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-53 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-54 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-55 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-56 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-57 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-58 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-59 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-6 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-60 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-61 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-62 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-63 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-64 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-65 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-66 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-67 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-68 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-69 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-7 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-70 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-71 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-72 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-73 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-74 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-75 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-76 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-77 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-78 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-79 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-8 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-80 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-81 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-82 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-83 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-84 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-85 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-86 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-87 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-88 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-89 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-9 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-90 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-91 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-92 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-93 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-94 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-95 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-96 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-97 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-98 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonDatabind-99 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonXml-1 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonXml-2 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonXml-3 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonXml-4 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonXml-5 ===
+[JDK8] mvn test-compile succeed!
+
+=== JacksonXml-6 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-1 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-10 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-11 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-12 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-13 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-14 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-15 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-16 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-17 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-18 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-19 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-2 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-20 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-21 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-22 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-23 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-24 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-25 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-26 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-27 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-28 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-29 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-3 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-30 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-31 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-32 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-33 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-34 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-35 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-36 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-37 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-38 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-39 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-4 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-40 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-41 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-42 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-43 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-44 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-45 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-46 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-47 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-48 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-49 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-5 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-50 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-51 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-52 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-53 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-54 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-55 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-56 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-57 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-58 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-59 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-6 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-60 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-61 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-62 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-63 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-64 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-65 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-66 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-67 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-68 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-69 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-7 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-70 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-71 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-72 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-73 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-74 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-75 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-76 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-77 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-78 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-79 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-8 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-80 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-81 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-82 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-83 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-84 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-85 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-86 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-87 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-88 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-89 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-9 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-90 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-91 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-92 ===
+[JDK8] mvn test-compile succeed!
+
+=== Jsoup-93 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-1 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-10 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-11 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-12 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-13 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-14 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-15 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-16 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-17 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-18 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-19 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-2 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-20 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-21 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-22 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-3 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-4 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-5 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-6 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-7 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-8 ===
+[JDK8] mvn test-compile succeed!
+
+=== JxPath-9 ===
+[JDK8] mvn test-compile succeed!
+

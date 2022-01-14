@@ -1,4 +1,3 @@
-	at junit.framework.TestResultcom.fasterxml.jackson.databind.deser.creators.TestCreators2#testExceptionFromConstructor PASS
 com.fasterxml.jackson.databind.access.TestAnyGetterAccess#testDynaBean PASS
 com.fasterxml.jackson.databind.access.TestAnyGetterAccess#testPrivate PASS
 com.fasterxml.jackson.databind.big.TestBiggerData#testReading PASS
@@ -208,6 +207,7 @@ com.fasterxml.jackson.databind.deser.creators.TestCreators2#testConstructorChoic
 com.fasterxml.jackson.databind.deser.creators.TestCreators2#testCreatorMultipleArgumentWithoutAnnotation PASS
 com.fasterxml.jackson.databind.deser.creators.TestCreators2#testCreatorProperties PASS
 com.fasterxml.jackson.databind.deser.creators.TestCreators2#testCreatorWithDupNames PASS
+com.fasterxml.jackson.databind.deser.creators.TestCreators2#testExceptionFromConstructor PASS
 com.fasterxml.jackson.databind.deser.creators.TestCreators2#testIgnoredSingleArgCtor PASS
 com.fasterxml.jackson.databind.deser.creators.TestCreators2#testJackson431 PASS
 com.fasterxml.jackson.databind.deser.creators.TestCreators2#testJackson438 PASS

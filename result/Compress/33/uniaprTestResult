@@ -1,4 +1,3 @@
-	at ororg.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest#testReadCDSizesAndOffset PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesBSD PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesGNU PASS
 org.apache.commons.compress.archivers.ar.ArArchiveOutputStreamTest#testLongFileNamesCauseExceptionByDefault PASS
@@ -265,6 +264,7 @@ org.apache.commons.compress.archivers.zip.X7875_NewUnixTest#testMisc PASS
 org.apache.commons.compress.archivers.zip.X7875_NewUnixTest#testParseReparse PASS
 org.apache.commons.compress.archivers.zip.X7875_NewUnixTest#testSampleFile PASS
 org.apache.commons.compress.archivers.zip.X7875_NewUnixTest#testTrimLeadingZeroesForceMinLength4 PASS
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest#testReadCDSizesAndOffset PASS
 org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest#testReadCDSizesOffsetAndDisk PASS
 org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest#testReadCDSomethingAndDisk PASS
 org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraFieldTest#testReadLFHSizesAndDisk PASS

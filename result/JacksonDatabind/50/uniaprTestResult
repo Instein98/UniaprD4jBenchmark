@@ -1392,7 +1392,7 @@ com.fasterxml.jackson.databind.ser.TestTypedRootValueSerialization#testTypedArra
 com.fasterxml.jackson.databind.ser.TestTypedRootValueSerialization#testTypedLists PASS
 com.fasterxml.jackson.databind.ser.TestTypedRootValueSerialization#testTypedMaps PASS
 com.fasterxml.jackson.databind.ser.TestTypedRootValueSerialization#testTypedSerialization PASS
-        com.fasterxml.jackson.databind.ser.TestUntypedSerialization#testFromArray PASS
+com.fasterxml.jackson.databind.ser.TestUntypedSerialization#testFromArray PASS
 com.fasterxml.jackson.databind.ser.TestUntypedSerialization#testFromMap PASS
 com.fasterxml.jackson.databind.ser.TestUnwrappedWithTypeInfo#testDefaultUnwrappedWithTypeInfo PASS
 com.fasterxml.jackson.databind.ser.TestUnwrappedWithTypeInfo#testUnwrappedWithTypeInfoAndFeatureDisabled PASS

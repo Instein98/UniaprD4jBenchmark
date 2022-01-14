@@ -354,47 +354,8 @@ RUNNING: org.apache.commons.cli.bug.BugsTest.test13666...
 RUNNING: org.apache.commons.cli.bug.BugsTest.test13935... 
 RUNNING: org.apache.commons.cli.bug.BugsTest.test14786... 
 RUNNING: org.apache.commons.cli.bug.BugsTest.test15046... 
-
-org.apache.commons.cli.AmbiguousOptionException: Ambiguous option: '--prefix'  (could be: 'prefix', 'prefixplusplus')
-	at org.apache.commons.cli.DefaultParser.handleLongOptionWithoutEqual(DefaultParser.java:398)
-	at org.apache.commons.cli.DefaultParser.haRUNNING: org.apache.commons.cli.bug.BugsTest.test15648... 
-ndleLongOption(DefaultParser.java:371)
-	at org.apache.commons.cli.DefaultParser.handleToken(DefaultParser.java:239)
-	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:120)
-	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:76)
-	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:60)
-	at org.apache.commons.cli.bug.BugCLI252Test.testExactOptionNameMatch(BugCLI252Test.java:10)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
-Exception found converting d to desired type: Unable to find the class: System.DateTime
-Exception found converting x to desired type: For input string: "3,5"
-Exception found converting i to desired type: java.lang.IllegalAccessException; URUNNING: org.apache.commons.cli.bug.BugsTest.test31148... 
-nable to create an instance of: java.util.Calendar
-Exception found converting n to desired type: Unable to find the class: System.DateTime
+RUNNING: org.apache.commons.cli.bug.BugsTest.test15648... 
+RUNNING: org.apache.commons.cli.bug.BugsTest.test31148... 
 RUNNING: org.apache.commons.cli.bug.BugCLI13Test.testCLI13... 
 RUNNING: org.apache.commons.cli.ApplicationTest.testLs... 
 RUNNING: org.apache.commons.cli.ApplicationTest.testAnt... 

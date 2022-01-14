@@ -1,4 +1,3 @@
-junit.frameorg.apache.commons.cli.PosixParserTest#testMissingArgWithBursting PASS
 org.apache.commons.cli.ApplicationTest#testAnt PASS
 org.apache.commons.cli.ApplicationTest#testGroovy FAIL
 org.apache.commons.cli.ApplicationTest#testLs PASS
@@ -137,6 +136,7 @@ org.apache.commons.cli.PosixParserTest#testLongOptionWithShort PASS
 org.apache.commons.cli.PosixParserTest#testLongWithEqual PASS
 org.apache.commons.cli.PosixParserTest#testLongWithEqualSingleDash PASS
 org.apache.commons.cli.PosixParserTest#testMissingArg PASS
+org.apache.commons.cli.PosixParserTest#testMissingArgWithBursting PASS
 org.apache.commons.cli.PosixParserTest#testMultiple PASS
 org.apache.commons.cli.PosixParserTest#testMultipleWithLong PASS
 org.apache.commons.cli.PosixParserTest#testNegativeArgument PASS

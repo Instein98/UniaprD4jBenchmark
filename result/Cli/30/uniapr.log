@@ -74,9 +74,9 @@ RUNNING: org.apache.commons.cli.BasicParserTest.testPropertyOverrideValues...
 RUNNING: org.apache.commons.cli.BasicParserTest.testPropertyOptionRequired... 
 RUNNING: org.apache.commons.cli.BasicParserTest.testPropertyOptionUnexpected... 
 RUNNING: org.apache.commons.cli.BasicParserTest.testPropertyOptionGroup... 
+RUNNING: org.apache.commons.cli.bug.BugCLI71Test.testMistakenArgument... 
 RUNNING: org.apache.commons.cli.bug.BugCLI71Test.testGetsDefaultIfOptional... 
 RUNNING: org.apache.commons.cli.bug.BugCLI71Test.testBasic... 
-RUNNING: org.apache.commons.cli.bug.BugCLI71Test.testMistakenArgument... 
 RUNNING: org.apache.commons.cli.bug.BugCLI71Test.testLackOfError... 
 RUNNING: org.apache.commons.cli.bug.BugCLI148Test.testWorkaround1... 
 RUNNING: org.apache.commons.cli.bug.BugCLI148Test.testWorkaround2... 
@@ -266,106 +266,7 @@ RUNNING: org.apache.commons.cli.GnuParserTest.testMissingArgWithBursting...
 RUNNING: org.apache.commons.cli.GnuParserTest.testStopBursting2... 
 RUNNING: org.apache.commons.cli.GnuParserTest.testLongWithUnexpectedArgument1... 
 RUNNING: org.apache.commons.cli.GnuParserTest.testLongWithUnexpectedArgument2... 
-
-java.lang.NullPointerException
-	at org.apache.commons.cli.Parser.processProperties(Parser.java:272)
-	at org.apache.commons.cli.Parser.parse(Parser.java:241)
-	at org.apache.commons.cli.Parser.parse(Parser.java:103)
-	at org.apache.commons.cli.ParserTestCase.parse(ParserTestCase.java:875)
-	at org.apache.commons.cli.ParserTestCase.testPropertyOptionUnexpected(ParserTestCase.java:1010)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-
-org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
-	at org.apache.commons.cli.OptionGroup.setSelected(OptionGroup.java:105)
-	at org.apache.commons.cli.Parser.updateRequiredOptions(Parser.java:421)
-	at org.apache.commons.cli.Parser.processProperties(Parser.java:296)
-	at org.apache.commons.cli.Parser.parse(Parser.java:241)
-	at org.apache.commons.cli.Parser.parse(Parser.java:103)
-	at org.apache.commons.cli.ParserTestCase.parse(ParserTestCase.java:875)
-	at org.apache.commons.cli.ParserTestCase.testPropertyOptionGroup(ParserTestCase.java:1037)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-usage:
-       org.apache.comm
-       ons.cli.bug.Bug
-       CLI162Test
-Header
--x,--extralongarg
- This description is
- Long.
-Footer
-
-
-org.apache.commons.cli.AlreadySelectedException: The option 'd' was specified but an option from this group has already been selected: 'f'
-	at org.apache.commons.cli.OptionGroup.setSelected(OptionGroup.java:105)
-	at org.apache.commons.cli.Parser.updateRequiredOptions(Parser.java:421)
-	at org.apache.commons.cli.Parser.processProperties(Parser.java:296)
-	at org.apache.commons.cli.Parser.parse(Parser.java:241)
-	at org.apache.commons.cli.Parser.parse(Parser.java:103)
-	at org.apache.commons.cli.OptionGroupTest.testTwoOptionsFromGroupWithProperties(OptionGroupTest.java:198)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-Exception found converting x to desired type: For input string: "3,5"
-Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
-Exception found converting n to desired type: Unable to find the class: System.DateTime
-Exception found converting v to desired type: RUNNING: org.apache.commons.cli.GnuParserTest.testShortWithUnexpectedArgument... 
-Unable to parse the URL: foo://commons.apache.org
-Exception found converting d to desired type: Unable to find the class: System.DateTime
+RUNNING: org.apache.commons.cli.GnuParserTest.testShortWithUnexpectedArgument... 
 RUNNING: org.apache.commons.cli.GnuParserTest.testStopBursting... 
 RUNNING: org.apache.commons.cli.GnuParserTest.testDoubleDash2... 
 RUNNING: org.apache.commons.cli.GnuParserTest.testPropertiesOption1... 
@@ -404,63 +305,7 @@ RUNNING: org.apache.commons.cli.GnuParserTest.testPropertyOptionMultipleValues..
 RUNNING: org.apache.commons.cli.GnuParserTest.testPropertyOverrideValues... 
 RUNNING: org.apache.commons.cli.GnuParserTest.testPropertyOptionRequired... 
 RUNNING: org.apache.commons.cli.GnuParserTest.testPropertyOptionUnexpected... 
-
-java.lang.NullPointerException
-	at org.apache.commons.cli.Parser.processProperties(Parser.java:272)
-	at org.apache.commons.cli.Parser.parse(Parser.java:241)
-	at org.apache.commons.cli.Parser.parse(Parser.java:103)
-	at org.apache.commons.cli.ParserTestCase.parse(ParserTestCase.java:875)
-	at org.apache.commons.cli.ParserTestCase.testPropertyOptionUnexpected(ParserTestCase.java:1010)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
 RUNNING: org.apache.commons.cli.GnuParserTest.testPropertyOptionGroup... 
-
-org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
-	at org.apache.commons.cli.OptionGroup.setSelected(OptionGroup.java:105)
-	at org.apache.commons.cli.Parser.updateRequiredOptions(Parser.java:421)
-	at org.apache.commons.cli.Parser.processProperties(Parser.java:296)
-	at org.apache.commons.cli.Parser.parse(Parser.java:241)
-	at org.apache.commons.cli.Parser.parse(Parser.java:103)
-	at org.apache.commons.cli.ParserTestCase.parse(ParserTestCase.java:875)
-	at org.apache.commons.cli.ParserTestCase.testPropertyOptionGroup(ParserTestCase.java:1037)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
 RUNNING: org.apache.commons.cli.bug.BugCLI133Test.testOrder... 
 RUNNING: org.apache.commons.cli.ApplicationTest.testLs... 
 RUNNING: org.apache.commons.cli.ApplicationTest.testAnt... 
@@ -544,6 +389,21 @@ RUNNING: org.apache.commons.cli.DefaultParserTest.testStopAtNonOptionLong...
 RUNNING: org.apache.commons.cli.DefaultParserTest.testNegativeArgument... 
 RUNNING: org.apache.commons.cli.DefaultParserTest.testArgumentStartingWithHyphen... 
 RUNNING: org.apache.commons.cli.DefaultParserTest.testLongWithoutEqualDoubleDash... 
+usage:
+       org.apache.comm
+       ons.cli.bug.Bug
+       CLI162Test
+Header
+-x,--extralongarg
+ This description is
+ Long.
+Footer
+
+Exception found converting x to desired type: For input string: "3,5"
+Exception found converting i to desired type: java.lang.IllegalAccessException; Unable to create an instance of: java.util.Calendar
+Exception found converting n to desired type: Unable to find the class: System.DateTime
+Exception found converting v to desired type: Unable to parse the URL: foo://commons.apache.org
+Exception found converting d to desired type: Unable to find the class: System.DateTime
 RUNNING: org.apache.commons.cli.DefaultParserTest.testLongWithUnexpectedArgument1... 
 RUNNING: org.apache.commons.cli.DefaultParserTest.testLongWithUnexpectedArgument2... 
 RUNNING: org.apache.commons.cli.DefaultParserTest.testShortWithUnexpectedArgument... 
@@ -562,64 +422,7 @@ RUNNING: org.apache.commons.cli.DefaultParserTest.testPropertyOptionMultipleValu
 RUNNING: org.apache.commons.cli.DefaultParserTest.testPropertyOverrideValues... 
 RUNNING: org.apache.commons.cli.DefaultParserTest.testPropertyOptionRequired... 
 RUNNING: org.apache.commons.cli.DefaultParserTest.testPropertyOptionUnexpected... 
-
-java.lang.NullPointerException
-	at org.apache.commons.cli.DefaultParser.handleProperties(DefaultParser.java:159)
-	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:127)
-	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:75)
-	at org.apache.commons.cli.ParserTestCase.parse(ParserTestCase.java:877)
-	at org.apache.commons.cli.ParserTestCase.testPropertyOptionUnexpected(ParserTestCase.java:1010)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
 RUNNING: org.apache.commons.cli.DefaultParserTest.testPropertyOptionGroup... 
-
-org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
-	at org.apache.commons.cli.OptionGroup.setSelected(OptionGroup.java:105)
-	at org.apache.commons.cli.DefaultParser.updateRequiredOptions(DefaultParser.java:630)
-	at org.apache.commons.cli.DefaultParser.handleOption(DefaultParser.java:594)
-	at org.apache.commons.cli.DefaultParser.handleProperties(DefaultParser.java:174)
-	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:127)
-	at org.apache.commons.cli.DefaultParser.parse(DefaultParser.java:75)
-	at org.apache.commons.cli.ParserTestCase.parse(ParserTestCase.java:877)
-	at org.apache.commons.cli.ParserTestCase.testPropertyOptionGroup(ParserTestCase.java:1037)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
 RUNNING: org.apache.commons.cli.DefaultParserTest.testStopBursting... 
 RUNNING: org.apache.commons.cli.DefaultParserTest.testDoubleDash2... 
 RUNNING: org.apache.commons.cli.OptionTest.testGetValue... 
@@ -684,63 +487,7 @@ RUNNING: org.apache.commons.cli.PosixParserTest.testPropertyOptionMultipleValues
 RUNNING: org.apache.commons.cli.PosixParserTest.testPropertyOverrideValues... 
 RUNNING: org.apache.commons.cli.PosixParserTest.testPropertyOptionRequired... 
 RUNNING: org.apache.commons.cli.PosixParserTest.testPropertyOptionUnexpected... 
-
-java.lang.NullPointerException
-	at org.apache.commons.cli.Parser.processProperties(Parser.java:272)
-	at org.apache.commons.cli.Parser.parse(Parser.java:241)
-	at org.apache.commons.cli.Parser.parse(Parser.java:103)
-	at org.apache.commons.cli.ParserTestCase.parse(ParserTestCase.java:875)
-	at org.apache.commons.cli.ParserTestCase.testPropertyOptionUnexpected(ParserTestCase.java:1010)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
 RUNNING: org.apache.commons.cli.PosixParserTest.testPropertyOptionGroup... 
-
-org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
-	at org.apache.commons.cli.OptionGroup.setSelected(OptionGroup.java:105)
-	at org.apache.commons.cli.Parser.updateRequiredOptions(Parser.java:421)
-	at org.apache.commons.cli.Parser.processProperties(Parser.java:296)
-	at org.apache.commons.cli.Parser.parse(Parser.java:241)
-	at org.apache.commons.cli.Parser.parse(Parser.java:103)
-	at org.apache.commons.cli.ParserTestCase.parse(ParserTestCase.java:875)
-	at org.apache.commons.cli.ParserTestCase.testPropertyOptionGroup(ParserTestCase.java:1037)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
 RUNNING: org.apache.commons.cli.PosixParserTest.testStopBursting... 
 Profiler failed test: org.apache.commons.cli.BasicParserTest.testPropertyOptionUnexpected
 Profiler failed test: org.apache.commons.cli.BasicParserTest.testPropertyOptionGroup

@@ -1,4 +1,3 @@
-	at org.junit.runners.Pareorg.apache.commons.compress.archivers.zip.ZipArchiveEntryTest#testNullCommentEqualsEmptyComment PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesBSD PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesGNU PASS
 org.apache.commons.compress.archivers.ar.ArArchiveOutputStreamTest#testLongFileNamesCauseExceptionByDefault PASS
@@ -303,6 +302,7 @@ org.apache.commons.compress.archivers.zip.ZipArchiveEntryTest#testCopyConstructo
 org.apache.commons.compress.archivers.zip.ZipArchiveEntryTest#testExtraFieldMerging PASS
 org.apache.commons.compress.archivers.zip.ZipArchiveEntryTest#testExtraFields PASS
 org.apache.commons.compress.archivers.zip.ZipArchiveEntryTest#testNotEquals PASS
+org.apache.commons.compress.archivers.zip.ZipArchiveEntryTest#testNullCommentEqualsEmptyComment PASS
 org.apache.commons.compress.archivers.zip.ZipArchiveEntryTest#testUnixMode PASS
 org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest#properUseOfInflater PASS
 org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest#shouldConsumeArchiveCompletely PASS

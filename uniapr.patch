@@ -36,6 +36,46 @@ index 2119b5f..40ed3c1 100644
  		} catch (Throwable t){
  			t.printStackTrace();
  		}
+diff --git a/src/main/java/org/uniapr/junit/runner/DefaultResultCollector.java b/src/main/java/org/uniapr/junit/runner/DefaultResultCollector.java
+index 81ec73d..b10706c 100644
+--- a/src/main/java/org/uniapr/junit/runner/DefaultResultCollector.java
++++ b/src/main/java/org/uniapr/junit/runner/DefaultResultCollector.java
+@@ -39,7 +39,7 @@ class DefaultResultCollector implements ResultCollector {
+             this.failingTestNames.add(failingTestName);
+             throwable=t;
+             // print the detailed failure message in debug mode
+-			if (debugMode) {
++			if (false) {
+ 				System.out.flush();
+ 				System.err.println();
+ 				t.printStackTrace();
+@@ -84,4 +84,4 @@ class DefaultResultCollector implements ResultCollector {
+ 		}
+ 		return false;
+ 	}
+-}
+\ No newline at end of file
++}
+diff --git a/src/main/java/org/uniapr/junit/runner/ExitingResultCollector.java b/src/main/java/org/uniapr/junit/runner/ExitingResultCollector.java
+index 13f0788..7d111f4 100644
+--- a/src/main/java/org/uniapr/junit/runner/ExitingResultCollector.java
++++ b/src/main/java/org/uniapr/junit/runner/ExitingResultCollector.java
+@@ -31,7 +31,7 @@ public class ExitingResultCollector implements ResultCollector
+ 		this.child.notifyEnd(description, t);
+ 		if (t != null) {
+ 			this.hadFailure = true;
+-			if (debugMode) {
++			if (false) {
+ 				System.out.flush();
+ 				System.err.println();
+ 				t.printStackTrace();
+@@ -52,4 +52,4 @@ public class ExitingResultCollector implements ResultCollector
+ 		return false;
+ 	}
+ 
+-}
+\ No newline at end of file
++}
 diff --git a/src/main/java/org/uniapr/profiler/ProfilerDriver.java b/src/main/java/org/uniapr/profiler/ProfilerDriver.java
 index 5ff8575..8477261 100644
 --- a/src/main/java/org/uniapr/profiler/ProfilerDriver.java

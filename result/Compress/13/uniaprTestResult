@@ -1,7 +1,7 @@
-	at junit.framework.TestResult.run(TestRorg.apache.commons.compress.archivers.ar.ArArchiveOutputStreamTest#testLongFileNamesWorkUsingBSDDialect PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesBSD PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesGNU PASS
 org.apache.commons.compress.archivers.ar.ArArchiveOutputStreamTest#testLongFileNamesCauseExceptionByDefault PASS
+org.apache.commons.compress.archivers.ar.ArArchiveOutputStreamTest#testLongFileNamesWorkUsingBSDDialect PASS
 org.apache.commons.compress.archivers.ArchiveOutputStreamTest#testCallSequenceAr PASS
 org.apache.commons.compress.archivers.ArchiveOutputStreamTest#testCallSequenceCpio PASS
 org.apache.commons.compress.archivers.ArchiveOutputStreamTest#testCallSequenceJar PASS

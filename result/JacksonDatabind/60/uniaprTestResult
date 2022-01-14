@@ -1,4 +1,3 @@
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)com.fasterxml.jackson.databind.deser.TestCyclicTypes#testCycleWith2Classes PASS
 com.fasterxml.jackson.databind.access.TestSerAnyGetter#testDynaBean PASS
 com.fasterxml.jackson.databind.access.TestSerAnyGetter#testPrivate PASS
 com.fasterxml.jackson.databind.big.TestBiggerData#testReading PASS
@@ -407,6 +406,7 @@ com.fasterxml.jackson.databind.deser.TestCustomValueInstDefaults#testMixedPresen
 com.fasterxml.jackson.databind.deser.TestCustomValueInstDefaults#testMoreThan32CreatorParams PASS
 com.fasterxml.jackson.databind.deser.TestCustomValueInstDefaults#testPresentNullReference PASS
 com.fasterxml.jackson.databind.deser.TestCustomValueInstDefaults#testPresentZeroPrimitive PASS
+com.fasterxml.jackson.databind.deser.TestCyclicTypes#testCycleWith2Classes PASS
 com.fasterxml.jackson.databind.deser.TestCyclicTypes#testIgnoredCycle PASS
 com.fasterxml.jackson.databind.deser.TestCyclicTypes#testLinkedGeneric PASS
 com.fasterxml.jackson.databind.deser.TestCyclicTypes#testLinked PASS

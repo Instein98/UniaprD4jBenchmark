@@ -1,4 +1,3 @@
-	at com.fasterxml.jackson.core.json.TestJsonGeneratorFeatures.tecom.fasterxml.jackson.core.json.TestCustomEscaping#testAboveAsciiEscapeWithReader PASS
 com.fasterxml.jackson.core.base64.TestBase64Codec#testCharEncoding PASS
 com.fasterxml.jackson.core.base64.TestBase64Codec#testErrors PASS
 com.fasterxml.jackson.core.base64.TestBase64Codec#testProps PASS
@@ -107,6 +106,7 @@ com.fasterxml.jackson.core.json.TestComments#testCppCommentsChars PASS
 com.fasterxml.jackson.core.json.TestComments#testDefaultSettings PASS
 com.fasterxml.jackson.core.json.TestComments#testYAMLCommentsBytes PASS
 com.fasterxml.jackson.core.json.TestComments#testYAMLCommentsChars PASS
+com.fasterxml.jackson.core.json.TestCustomEscaping#testAboveAsciiEscapeWithReader PASS
 com.fasterxml.jackson.core.json.TestCustomEscaping#testAboveAsciiEscapeWithUTF8Stream PASS
 com.fasterxml.jackson.core.json.TestCustomEscaping#testEscapeCustomWithReader PASS
 com.fasterxml.jackson.core.json.TestCustomEscaping#testEscapeCustomWithUTF8Stream PASS

@@ -1,4 +1,3 @@
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Delegatingorg.jsoup.parser.HtmlParserTest#normalisedBodyAfterContent PASS
 org.jsoup.helper.DataUtilTest#discardsSpuriousByteOrderMark PASS
 org.jsoup.helper.DataUtilTest#testCharset PASS
 org.jsoup.helper.DataUtilTest#testQuotedCharset PASS
@@ -228,6 +227,7 @@ org.jsoup.parser.HtmlParserTest#ignoresContentAfterFrameset PASS
 org.jsoup.parser.HtmlParserTest#ignoresDupeEndTrTag PASS
 org.jsoup.parser.HtmlParserTest#noErrorsByDefault PASS
 org.jsoup.parser.HtmlParserTest#noImplicitFormForTextAreas PASS
+org.jsoup.parser.HtmlParserTest#normalisedBodyAfterContent PASS
 org.jsoup.parser.HtmlParserTest#normalisesDocument PASS
 org.jsoup.parser.HtmlParserTest#normalisesEmptyDocument PASS
 org.jsoup.parser.HtmlParserTest#normalisesHeadlessBody PASS

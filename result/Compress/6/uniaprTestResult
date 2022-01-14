@@ -1,4 +1,3 @@
-	at juorg.apache.commons.compress.archivers.zip.UTF8ZipFilesTest#testUtf8FileRoundtripNoEFSImplicitUnicodeExtra PASSnit.framework.TestCase.assertFalse(TestCase.java:219)
 org.apache.commons.compress.archivers.ArchiveOutputStreamTest#testCallSequenceAr PASS
 org.apache.commons.compress.archivers.ArchiveOutputStreamTest#testCallSequenceCpio PASS
 org.apache.commons.compress.archivers.ArchiveOutputStreamTest#testCallSequenceJar PASS
@@ -70,6 +69,7 @@ org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest#testReadWinZipArchive
 org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest#testUtf8FileRoundtripExplicitUnicodeExtra PASS
 org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest#testUtf8FileRoundtripImplicitUnicodeExtra PASS
 org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest#testUtf8FileRoundtripNoEFSExplicitUnicodeExtra PASS
+org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest#testUtf8FileRoundtripNoEFSImplicitUnicodeExtra PASS
 org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest#testUtf8Interoperability PASS
 org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest#testZipArchiveInputStreamReadsUnicodeFields PASS
 org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest#testZipFileReadsUnicodeFields PASS

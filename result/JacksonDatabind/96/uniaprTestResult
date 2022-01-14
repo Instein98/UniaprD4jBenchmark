@@ -1,4 +1,3 @@
-	at com.fasterxml.jackson.databicom.fasterxml.jackson.databind.node.TestTreeTraversingParser#testDataBind PASS
 com.fasterxml.jackson.databind.access.TestAnyGetterAccess#testDynaBean PASS
 com.fasterxml.jackson.databind.access.TestAnyGetterAccess#testPrivate PASS
 com.fasterxml.jackson.databind.big.TestBiggerData#testReading PASS
@@ -1337,6 +1336,7 @@ com.fasterxml.jackson.databind.node.TestTreeMapperSerializer#testSmallNumbers PA
 com.fasterxml.jackson.databind.node.TestTreeTraversingParser#testArray PASS
 com.fasterxml.jackson.databind.node.TestTreeTraversingParser#testBinaryNode PASS
 com.fasterxml.jackson.databind.node.TestTreeTraversingParser#testBinaryPojo PASS
+com.fasterxml.jackson.databind.node.TestTreeTraversingParser#testDataBind PASS
 com.fasterxml.jackson.databind.node.TestTreeTraversingParser#testNested PASS
 com.fasterxml.jackson.databind.node.TestTreeTraversingParser#testSimple PASS
 com.fasterxml.jackson.databind.node.TestTreeTraversingParser#testSkipChildrenWrt370 PASS

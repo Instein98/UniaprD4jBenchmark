@@ -1,4 +1,3 @@
-	atorg.apache.commons.cli.GnuParserTest#testMissingRequiredGroup PASS
 org.apache.commons.cli.ApplicationTest#testAnt PASS
 org.apache.commons.cli.ApplicationTest#testGroovy PASS
 org.apache.commons.cli.ApplicationTest#testLs PASS
@@ -153,6 +152,7 @@ org.apache.commons.cli.GnuParserTest#testLongWithUnexpectedArgument1 PASS
 org.apache.commons.cli.GnuParserTest#testLongWithUnexpectedArgument2 PASS
 org.apache.commons.cli.GnuParserTest#testMissingArg PASS
 org.apache.commons.cli.GnuParserTest#testMissingArgWithBursting PASS
+org.apache.commons.cli.GnuParserTest#testMissingRequiredGroup PASS
 org.apache.commons.cli.GnuParserTest#testMissingRequiredOption PASS
 org.apache.commons.cli.GnuParserTest#testMissingRequiredOptions PASS
 org.apache.commons.cli.GnuParserTest#testMultiple PASS

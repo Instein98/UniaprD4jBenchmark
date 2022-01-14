@@ -1,4 +1,3 @@
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.javaorg.jsoup.helper.HttpConnectionTest#userAgent PASS
 org.jsoup.helper.DataUtilTest#discardsSpuriousByteOrderMark PASS
 org.jsoup.helper.DataUtilTest#discardsSpuriousByteOrderMarkWhenNoCharsetSet PASS
 org.jsoup.helper.DataUtilTest#shouldCorrectCharsetForDuplicateCharsetString PASS
@@ -21,6 +20,7 @@ org.jsoup.helper.HttpConnectionTest#throwsExceptionOnParseWithoutExecute PASS
 org.jsoup.helper.HttpConnectionTest#throwsOnMalformedUrl PASS
 org.jsoup.helper.HttpConnectionTest#throwsOnOdddData PASS
 org.jsoup.helper.HttpConnectionTest#timeout PASS
+org.jsoup.helper.HttpConnectionTest#userAgent PASS
 org.jsoup.helper.StringUtilTest#isBlank PASS
 org.jsoup.helper.StringUtilTest#isNumeric PASS
 org.jsoup.helper.StringUtilTest#isWhitespace PASS

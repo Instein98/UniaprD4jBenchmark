@@ -1,1 +1,1 @@
-org.apache.commons.collections4.MapUtilsTest#testPopulateMap
+org.apache.commons.collections4.keyvalue.MultiKeyTest#testEqualsAfterSerializationOfDerivedClass
