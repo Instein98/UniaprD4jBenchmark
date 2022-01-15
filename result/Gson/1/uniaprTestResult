@@ -656,7 +656,6 @@ com.google.gson.stream.JsonWriterTest#testNumbers PASS
 com.google.gson.stream.JsonWriterTest#testObjectsInArrays PASS
 com.google.gson.stream.JsonWriterTest#testPrettyPrintArray PASS
 com.google.gson.stream.JsonWriterTest#testPrettyPrintObject PASS
-com.google.gson.stream.JsonWriterTest#testRepeatedName PASS
 com.google.gson.stream.JsonWriterTest#testStrings PASS
 com.google.gson.stream.JsonWriterTest#testTwoNames PASS
 com.google.gson.stream.JsonWriterTest#testValueWithoutName PASS
@@ -718,3 +717,4 @@ com.google.gson.VersionExclusionStrategyTest#testClassAndFieldAreAheadInVersion 
 com.google.gson.VersionExclusionStrategyTest#testClassAndFieldAreAtSameVersion PASS
 com.google.gson.VersionExclusionStrategyTest#testClassAndFieldAreBehindInVersion PASS
 com.google.gson.VersionExclusionStrategyTest#testDisallowNegativeValuesAndFailFast PASS
+WARNING: Overcom.google.gson.stream.JsonWriterTest#testRepeatedName PASS

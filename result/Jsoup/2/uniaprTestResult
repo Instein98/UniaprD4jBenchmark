@@ -1,4 +1,3 @@
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunorg.jsoup.nodes.NodeTest#testRemove PASS
 org.jsoup.integration.ParseTest#testBinary PASS
 org.jsoup.integration.ParseTest#testGoogleSearchIpod PASS
 org.jsoup.integration.ParseTest#testNewsHomepage PASS
@@ -36,6 +35,7 @@ org.jsoup.nodes.ElementTest#testWrap PASS
 org.jsoup.nodes.ElementTest#testWrapWithRemainder PASS
 org.jsoup.nodes.NodeTest#handlesAbsPrefix PASS
 org.jsoup.nodes.NodeTest#handlesBaseUri PASS
+org.jsoup.nodes.NodeTest#testRemove PASS
 org.jsoup.nodes.NodeTest#testReplace PASS
 org.jsoup.nodes.TextNodeTest#testBlank PASS
 org.jsoup.nodes.TextNodeTest#testTextBean PASS

@@ -46,7 +46,7 @@ prepare_uniapr
 for proj in `ls projects_2.0`; do
     for id in `ls projects_2.0/$proj`; do
         # there are some irrelevant file under projects_2.0/$proj
-        if [ ! -d projects_2.0/$proj/$id ] || file_contains_string identicalProj "$proj-$id" ; then
+        if [ ! -d projects_2.0/$proj/$id ] || file_contains_string identicalProj "$proj-$id$" ; then
             continue
         fi
 
@@ -75,7 +75,8 @@ for proj in `ls projects_2.0`; do
         if [ -d $pwd/d4j_projects/$proj/$id ];then
             cd $pwd/d4j_projects/$proj/$id 
             sed -n 's/  - \(.*\)::\(.*\)/\1#\2/p' d4j-test.log | sort | uniq > d4jFailedTests
-            sed -n 's/\(.*\)(\(.*\))/\2#\1 PASS/p' all_tests | sort | uniq > d4jTestResult
+            # the second pipe is to handle the parameterized tests
+            sed -n 's/\(.*\)(\(.*\))/\2#\1 PASS/p' all_tests | sed 's/\(.*\)\[.*\] PASS/\1 PASS/' | sort | uniq > d4jTestResult
             for line in `cat d4jFailedTests`; do
                 sed -i "s/$line PASS/$line FAIL/" d4jTestResult
             done

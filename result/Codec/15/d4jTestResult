@@ -322,24 +322,7 @@ org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSetRuleTypeToRul
 org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSpeedCheck2 PASS
 org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSpeedCheck3 PASS
 org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSpeedCheck PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[ácz-any-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Angelopoulos-greeklatin-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[átz-any-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Čapek-czech-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Carvalho-portuguese-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Ceauşescu-romanian-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Giacometti-italian-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Klausewitz-german-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Küçük-turkish-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Mickiewicz-polish-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Nagy-hungarian-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Nuñez-spanish-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Renault-french-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Sjneijder-dutch-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Thompson-english-one of] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[כהן-hebrew-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Αγγελόπουλος-greek-exact] PASS
-org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing[Пушкин-cyrillic-exact] PASS
+org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing PASS
 org.apache.commons.codec.language.bm.PhoneticEngineRegressionTest#testCompatibilityWithOriginalVersion PASS
 org.apache.commons.codec.language.bm.PhoneticEngineRegressionTest#testSolrASHKENAZI PASS
 org.apache.commons.codec.language.bm.PhoneticEngineRegressionTest#testSolrGENERIC PASS

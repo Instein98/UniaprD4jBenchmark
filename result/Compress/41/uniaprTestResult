@@ -1,3 +1,4 @@
+org.apache.commons.compress.ArchiveReadTest#testArchive PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesBSD PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesGNU PASS
 org.apache.commons.compress.archivers.ar.ArArchiveOutputStreamTest#testLongFileNamesCauseExceptionByDefault PASS
@@ -66,6 +67,8 @@ org.apache.commons.compress.archivers.jar.JarArchiveOutputStreamTest#testJarMark
 org.apache.commons.compress.archivers.JarTestCase#testJarArchiveCreation PASS
 org.apache.commons.compress.archivers.JarTestCase#testJarUnarchiveAll PASS
 org.apache.commons.compress.archivers.JarTestCase#testJarUnarchive PASS
+org.apache.commons.compress.archivers.LongPathTest#testArchive PASS
+org.apache.commons.compress.archivers.LongSymLinkTest#testArchive PASS
 org.apache.commons.compress.archivers.memory.MemoryArchiveTestCase#testReading PASS
 org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntryTest#shouldThrowIfNoAccessDateIsSet PASS
 org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntryTest#shouldThrowIfNoCreationDateIsSet PASS

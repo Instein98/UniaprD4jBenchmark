@@ -14,11 +14,11 @@ RUNNING: com.fasterxml.jackson.databind.ser.TestFieldSerialization.testSimpleAut
 RUNNING: com.fasterxml.jackson.databind.ser.TestFieldSerialization.testSimpleAnnotation... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestFieldSerialization.testNoAutoDetect... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestFieldSerialization.testFailureDueToDups... 
-RUNNING: com.fasterxml.jackson.databind.ser.TestFieldSerialization.testIssue240... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestFieldSerialization.testOkDupFields... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestFieldSerialization.testTransientAndStatic... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestFieldSerialization.testMethodPrecedence... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestFieldSerialization.testFailureDueToDupField... 
+RUNNING: com.fasterxml.jackson.databind.ser.TestFieldSerialization.testIssue240... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestStatics.testSimpleIgnore... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestGenerics.testSimpleNumberBean... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestGenerics.testGenericWrapper... 
@@ -38,9 +38,9 @@ RUNNING: com.fasterxml.jackson.databind.introspect.TestAnnotionBundles.testRecur
 RUNNING: com.fasterxml.jackson.databind.introspect.TestAnnotionBundles.testBundledIgnore... 
 RUNNING: com.fasterxml.jackson.databind.introspect.TestAnnotionBundles.testVisibilityBundle... 
 RUNNING: com.fasterxml.jackson.databind.introspect.TestAnnotionBundles.testIssue92... 
+RUNNING: com.fasterxml.jackson.databind.ser.TestEnumSerialization.testSimple... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestEnumSerialization.testSubclassedEnums... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestEnumSerialization.testEnumsWithJsonValue... 
-RUNNING: com.fasterxml.jackson.databind.ser.TestEnumSerialization.testSimple... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestEnumSerialization.testEnumSet... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestEnumSerialization.testEnumUsingToString... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestEnumSerialization.testEnumsWithJsonValueUsingMixin... 
@@ -500,131 +500,6 @@ RUNNING: com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testF
 RUNNING: com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testForwardReferenceInCollection... 
 RUNNING: com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testForwardReferenceInMap... 
 RUNNING: com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testForwardReferenceAnySetterCombo... 
-
-java.lang.IncompatibleClassChangeError: Implementing class
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
-	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
-	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	at org.codehaus.groovy.classgen.Verifier.visitMethod(Verifier.java:464)
-	at org.codehaus.groovy.classgen.Verifier.visitProperty(Verifier.java:552)
-	at org.codehaus.groovy.ast.ClassNode.visitContents(ClassNode.java:1027)
-	at org.codehaus.groovy.classgen.Verifier.visitClass(Verifier.java:166)
-	at org.codehaus.groovy.control.CompilationUnit$12.call(CompilationUnit.java:711)
-	at org.codehaus.groovy.control.CompilationUnit.applyToPrimaryClassNodes(CompilationUnit.java:942)
-	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:519)
-	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:497)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:474)
-	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:306)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:287)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:267)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:214)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:224)
-	at com.fasterxml.jackson.databind.interop.TestGroovyBeans.defineGroovyClass(TestGroovyBeans.java:67)
-	at com.fasterxml.jackson.databind.interop.TestGroovyBeans.newGroovyObject(TestGroovyBeans.java:73)
-	at com.fasterxml.jackson.databind.interop.TestGroovyBeans.testSimpleSerialization(TestGroovyBeans.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
-
-java.lang.IncompatibleClassChangeError: Implementing class
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
-	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
-	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	at org.codehaus.groovy.classgen.Verifier.visitMethod(Verifier.java:464)
-	at org.codehaus.groovy.classgen.Verifier.visitProperty(Verifier.java:552)
-	at org.codehaus.groovy.ast.ClassNode.visitContents(ClassNode.java:1027)
-	at org.codehaus.groovy.classgen.Verifier.visitClass(Verifier.java:166)
-	at org.codehaus.groovy.control.CompilationUnit$12.call(CompilationUnit.java:711)
-	at org.codehaus.groovy.control.CompilationUnit.applyToPrimaryClassNodes(CompilationUnit.java:942)
-	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:519)
-	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:497)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:474)
-	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:306)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:287)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:267)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:214)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:224)
-	at com.fasterxml.jackson.databind.interop.TestGroovyBeans.defineGroovyClass(TestGroovyBeans.java:67)
-	at com.fasterxml.jackson.databind.interop.TestGroovyBeans.testSimpleDeserialization(TestGroovyBeans.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
 RUNNING: com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testUnresolvedForwardReference... 
 RUNNING: com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testUnresolvableAsNull... 
 RUNNING: com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization.testKeepCollectionOrdering... 
@@ -683,47 +558,6 @@ RUNNING: com.fasterxml.jackson.databind.deser.TestFieldDeserialization.testFailu
 RUNNING: com.fasterxml.jackson.databind.deser.TestFieldDeserialization.testOkFieldOverride... 
 RUNNING: com.fasterxml.jackson.databind.jsontype.TestGenericListSerialization.testSubTypesFor356... 
 RUNNING: com.fasterxml.jackson.databind.interop.TestCglibUsage.testSimpleProxied... 
-
-java.lang.VerifyError: class net.sf.cglib.core.DebuggingClassWriter overrides final method visit.(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-	at java.net.URLClassLoader.defineClass(URLClassLoader.java:473)
-	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	at net.sf.cglib.core.AbstractClassGenerator.<init>(AbstractClassGenerator.java:38)
-	at net.sf.cglib.core.KeyFactory$Generator.<init>(KeyFactory.java:127)
-	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:112)
-	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:108)
-	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:104)
-	at net.sf.cglib.proxy.Enhancer.<clinit>(Enhancer.java:69)
-	at com.fasterxml.jackson.databind.interop.TestCglibUsage.testSimpleProxied(TestCglibUsage.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-
 RUNNING: com.fasterxml.jackson.databind.deser.TestArrayDeserialization.testUntypedArray... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestArrayDeserialization.testIntegerArray... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestArrayDeserialization.testFromEmptyString... 
@@ -803,8 +637,8 @@ RUNNING: com.fasterxml.jackson.databind.ser.TestJsonSerialize3.testCustomContent
 RUNNING: com.fasterxml.jackson.databind.filter.TestAnyGetterFiltering.testAnyGetterFiltering... 
 RUNNING: com.fasterxml.jackson.databind.convert.TestBeanConversions.testBeanConvert... 
 RUNNING: com.fasterxml.jackson.databind.convert.TestBeanConversions.testErrorReporting... 
-RUNNING: com.fasterxml.jackson.databind.convert.TestBeanConversions.testIssue458... 
 RUNNING: com.fasterxml.jackson.databind.convert.TestBeanConversions.testWrapping... 
+RUNNING: com.fasterxml.jackson.databind.convert.TestBeanConversions.testIssue458... 
 RUNNING: com.fasterxml.jackson.databind.convert.TestBeanConversions.testConvertUsingCast... 
 RUNNING: com.fasterxml.jackson.databind.convert.TestBeanConversions.testNodeConvert... 
 RUNNING: com.fasterxml.jackson.databind.convert.TestBeanConversions.testIssue11... 
@@ -817,6 +651,7 @@ RUNNING: com.fasterxml.jackson.databind.jsontype.TestEnumTyping.testEnumInterfac
 RUNNING: com.fasterxml.jackson.databind.jsontype.TestEnumTyping.testEnumInterfaceList... 
 RUNNING: com.fasterxml.jackson.databind.jsontype.TestEnumTyping.testTagList... 
 RUNNING: com.fasterxml.jackson.databind.jsontype.TestEnumTyping.testUntypedEnum... 
+RUNNING: com.fasterxml.jackson.databind.deser.TestEnumDeserialization.testSimple... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestEnumDeserialization.testComplexEnum... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestEnumDeserialization.testAnnotated... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestEnumDeserialization.testEnumMaps... 
@@ -842,7 +677,6 @@ RUNNING: com.fasterxml.jackson.databind.deser.TestEnumDeserialization.testExcept
 RUNNING: com.fasterxml.jackson.databind.deser.TestEnumDeserialization.testUnwrappedEnum... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestEnumDeserialization.testUnwrappedEnumException... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestEnumDeserialization.testIndexAsString... 
-RUNNING: com.fasterxml.jackson.databind.deser.TestEnumDeserialization.testSimple... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestSimpleAtomicTypes.testAtomicReference... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestSimpleAtomicTypes.testAtomicLong... 
 RUNNING: com.fasterxml.jackson.databind.ser.TestSimpleAtomicTypes.testAtomicBoolean... 
@@ -965,49 +799,6 @@ RUNNING: com.fasterxml.jackson.databind.deser.TestJdkTypes.testCharset...
 RUNNING: com.fasterxml.jackson.databind.deser.TestJdkTypes.testStackTraceElement... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestJdkTypes.testByteBuffer... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestJdkTypes.testStringBuilder... 
-
-com.fasterxml.jackson.databind.JsonMappingException: Conflicting String creators: already had explicitly marked [constructor for java.lang.StringBuilder, annotations: [null]], encountered [constructor for java.lang.StringBuilder, annotations: [null]]
-	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:267)
-	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:242)
-	at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:143)
-	at com.fasterxml.jackson.databind.DeserializationContext.findRootValueDeserializer(DeserializationContext.java:439)
-	at com.fasterxml.jackson.databind.ObjectMapper._findRootDeserializer(ObjectMapper.java:3664)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3556)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2576)
-	at com.fasterxml.jackson.databind.deser.TestJdkTypes.testStringBuilder(TestJdkTypes.java:425)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at junit.framework.TestCase.runTest(TestCase.java:176)
-	at junit.framework.TestCase.runBare(TestCase.java:141)
-	at junit.framework.TestResult$1.protect(TestResult.java:122)
-	at junit.framework.TestResult.runProtected(TestResult.java:142)
-	at junit.framework.TestResult.run(TestResult.java:125)
-	at junit.framework.TestCase.run(TestCase.java:129)
-	at junit.framework.TestSuite.runTest(TestSuite.java:252)
-	at junit.framework.TestSuite.run(TestSuite.java:247)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86)
-	at org.pitest.junit.adapter.CustomRunnerExecutor.run(CustomRunnerExecutor.java:42)
-	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:69)
-	at org.uniapr.profiler.ProfilerDriver$1.execute(ProfilerDriver.java:75)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:106)
-	at org.uniapr.junit.runner.JUnitRunner.run(JUnitRunner.java:92)
-	at org.uniapr.profiler.ProfilerDriver.main(ProfilerDriver.java:46)
-Caused by: java.lang.IllegalArgumentException: Conflicting String creators: already had explicitly marked [constructor for java.lang.StringBuilder, annotations: [null]], encountered [constructor for java.lang.StringBuilder, annotations: [null]]
-	at com.fasterxml.jackson.databind.deser.impl.CreatorCollector.verifyNonDup(CreatorCollector.java:297)
-	at com.fasterxml.jackson.databind.deser.impl.CreatorCollector.addStringCreator(CreatorCollector.java:158)
-	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory._handleSingleArgumentConstructor(BasicDeserializerFactory.java:555)
-	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory._addDeserializerConstructors(BasicDeserializerFactory.java:439)
-	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory._constructDefaultValueInstantiator(BasicDeserializerFactory.java:325)
-	at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.findValueInstantiator(BasicDeserializerFactory.java:258)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:216)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:143)
-	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:405)
-	at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:354)
-	at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:262)
-	... 26 more
-
 RUNNING: com.fasterxml.jackson.databind.deser.TestJdkTypes.testStackTraceElementWithCustom... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestJdkTypes.testSingleElementArray... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestJdkTypes.testSingleElementArrayException... 
@@ -1367,6 +1158,8 @@ RUNNING: com.fasterxml.jackson.databind.deser.TestJacksonTypes.testTokenBufferWi
 RUNNING: com.fasterxml.jackson.databind.deser.TestJacksonTypes.testJavaType... 
 RUNNING: com.fasterxml.jackson.databind.mixins.TestMixinSerForClass.testClassMixInsTopLevel... 
 RUNNING: com.fasterxml.jackson.databind.mixins.TestMixinSerForClass.testClassMixInsMidLevel... 
+RUNNING: com.fasterxml.jackson.databind.deser.TestValueAnnotations.testOverrideArrayContents... 
+RUNNING: com.fasterxml.jackson.databind.deser.TestValueAnnotations.testOverrideMapContents... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestValueAnnotations.testOverrideClassValid... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestValueAnnotations.testOverrideMapValid... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestValueAnnotations.testOverrideArrayClass... 
@@ -1378,12 +1171,10 @@ RUNNING: com.fasterxml.jackson.databind.deser.TestValueAnnotations.testRootMapAs
 RUNNING: com.fasterxml.jackson.databind.deser.TestValueAnnotations.testOverrideKeyClassValid... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestValueAnnotations.testOverrideKeyClassInvalid... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestValueAnnotations.testOverrideContentClassValid... 
-RUNNING: com.fasterxml.jackson.databind.deser.TestValueAnnotations.testOverrideArrayContents... 
-RUNNING: com.fasterxml.jackson.databind.deser.TestValueAnnotations.testOverrideMapContents... 
-RUNNING: com.fasterxml.jackson.databind.deser.TestGenericNumber.testFpTypeOverrideSimple... 
-RUNNING: com.fasterxml.jackson.databind.deser.TestGenericNumber.testFpTypeOverrideStructured... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestGenericNumber.testLongAsNumber... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestGenericNumber.testIntAsNumber... 
+RUNNING: com.fasterxml.jackson.databind.deser.TestGenericNumber.testFpTypeOverrideSimple... 
+RUNNING: com.fasterxml.jackson.databind.deser.TestGenericNumber.testFpTypeOverrideStructured... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestGenericNumber.testBigIntAsNumber... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestGenericNumber.testIntTypeOverride... 
 RUNNING: com.fasterxml.jackson.databind.deser.TestGenericNumber.testDoubleAsNumber... 

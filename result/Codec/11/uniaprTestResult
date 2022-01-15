@@ -204,6 +204,7 @@ org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSetRuleTypeToRul
 org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSpeedCheck2 PASS
 org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSpeedCheck3 PASS
 org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSpeedCheck PASS
+org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing PASS
 org.apache.commons.codec.language.bm.RuleTest#testPhonemeComparedToLaterIsNegative PASS
 org.apache.commons.codec.language.bm.RuleTest#testPhonemeComparedToSelfIsZero PASS
 org.apache.commons.codec.language.bm.RuleTest#testSubSequenceWorks PASS

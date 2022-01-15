@@ -1,5 +1,7 @@
 org.apache.commons.csv.AssertionsTest#testNotNullNull PASS
 org.apache.commons.csv.AssertionsTest#testNotNull PASS
+org.apache.commons.csv.CSVFileParserTest#testCSVFile PASS
+org.apache.commons.csv.CSVFileParserTest#testCSVUrl PASS
 org.apache.commons.csv.CSVFormatTest#testDelimiterSameAsCommentStartThrowsException PASS
 org.apache.commons.csv.CSVFormatTest#testDelimiterSameAsEscapeThrowsException PASS
 org.apache.commons.csv.CSVFormatTest#testDuplicateHeaderElements PASS

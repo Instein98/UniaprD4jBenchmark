@@ -1,21 +1,4 @@
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=FreeBSD.ar] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=FreeBSD_bin.cpio] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=FreeBSD_crc.cpio] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=FreeBSD_hpbin.cpio] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=FreeBSD_newc.cpio] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=FreeBSD_pax.tar] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=FreeBSD_.tar] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=FreeBSD_ustar.tar] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=FreeBSD.zip] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=SunOS.ar] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=SunOS_cAEf.tar] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=SunOS_-c.cpio] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=SunOS_cEf.tar] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=SunOS_cf.tar] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=SunOS_.cpio] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=SunOS_crc.cpio] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=SunOS_odc.cpio] PASS
-org.apache.commons.compress.ArchiveReadTest#testArchive[file=SunOS.zip] PASS
+org.apache.commons.compress.ArchiveReadTest#testArchive PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesBSD PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesGNU PASS
 org.apache.commons.compress.archivers.ar.ArArchiveOutputStreamTest#testLongFileNamesCauseExceptionByDefault PASS
@@ -88,31 +71,8 @@ org.apache.commons.compress.archivers.jar.JarArchiveOutputStreamTest#testJarMark
 org.apache.commons.compress.archivers.JarTestCase#testJarArchiveCreation PASS
 org.apache.commons.compress.archivers.JarTestCase#testJarUnarchiveAll PASS
 org.apache.commons.compress.archivers.JarTestCase#testJarUnarchive PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=cygwin_gnu.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=cygwin_oldgnu.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=cygwin_pax.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=cygwin_posix.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=cygwin_ustar.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=hudson-E.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=hudson.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=minotaur-0.jar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=minotaur.ar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=minotaur.cpio] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=minotaur-c.zip] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=minotaur.jar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=minotaur-M.jar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=minotaur_pax.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=minotaur_posix.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=minotaur_ustar.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=minotaur.zip] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=minotaur-z.zip] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=vmgump_gnu.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=vmgump_oldgnu.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=vmgump_pax.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=vmgump_posix.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=vmgump_ustar.tar] PASS
-org.apache.commons.compress.archivers.LongPathTest#testArchive[file=winXP_antgnu.tar] PASS
-org.apache.commons.compress.archivers.LongSymLinkTest#testArchive[file=gnu.tar] PASS
+org.apache.commons.compress.archivers.LongPathTest#testArchive PASS
+org.apache.commons.compress.archivers.LongSymLinkTest#testArchive PASS
 org.apache.commons.compress.archivers.memory.MemoryArchiveTestCase#testReading PASS
 org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntryTest#shouldThrowIfNoAccessDateIsSet PASS
 org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntryTest#shouldThrowIfNoCreationDateIsSet PASS
@@ -563,15 +523,9 @@ org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorOutputStreamTest#w
 org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorOutputStreamTest#writesCorrectSizeFor270ByteLengthLiteral PASS
 org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorOutputStreamTest#writesCorrectSizeFor273ByteLengthBackReference PASS
 org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorOutputStreamTest#writesCorrectSizeFor274ByteLengthBackReference PASS
-org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#biggerFileRoundtrip[using default] PASS
-org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#biggerFileRoundtrip[using tuned for compression ratio] PASS
-org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#biggerFileRoundtrip[using tuned for speed] PASS
-org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#blaTarRoundtrip[using default] PASS
-org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#blaTarRoundtrip[using tuned for compression ratio] PASS
-org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#blaTarRoundtrip[using tuned for speed] PASS
-org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip[using default] PASS
-org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip[using tuned for compression ratio] PASS
-org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip[using tuned for speed] PASS
+org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#biggerFileRoundtrip PASS
+org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#blaTarRoundtrip PASS
+org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip PASS
 org.apache.commons.compress.compressors.lz4.FactoryTest#blockRoundtripViaFactory PASS
 org.apache.commons.compress.compressors.lz4.FactoryTest#frameRoundtripViaFactory PASS
 org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStreamTest#readBlaDumpLz4 PASS
@@ -608,30 +562,10 @@ org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStreamTest#r
 org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStreamTest#skipsOverSkippableFrames PASS
 org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStreamTest#skipsOverTrailingSkippableFrames PASS
 org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStreamTest#testMatches PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#biggerFileRoundtrip[using LZ4 Parameters with BlockSize K256, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#biggerFileRoundtrip[using LZ4 Parameters with BlockSize K64, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#biggerFileRoundtrip[using LZ4 Parameters with BlockSize K64, withContentChecksum true, withBlockChecksum false, withBlockDependency true] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#biggerFileRoundtrip[using LZ4 Parameters with BlockSize M1, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#biggerFileRoundtrip[using LZ4 Parameters with BlockSize M4, withContentChecksum false, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#biggerFileRoundtrip[using LZ4 Parameters with BlockSize M4, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#biggerFileRoundtrip[using LZ4 Parameters with BlockSize M4, withContentChecksum true, withBlockChecksum true, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#blaTarRoundtrip[using LZ4 Parameters with BlockSize K256, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#blaTarRoundtrip[using LZ4 Parameters with BlockSize K64, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#blaTarRoundtrip[using LZ4 Parameters with BlockSize K64, withContentChecksum true, withBlockChecksum false, withBlockDependency true] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#blaTarRoundtrip[using LZ4 Parameters with BlockSize M1, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#blaTarRoundtrip[using LZ4 Parameters with BlockSize M4, withContentChecksum false, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#blaTarRoundtrip[using LZ4 Parameters with BlockSize M4, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#blaTarRoundtrip[using LZ4 Parameters with BlockSize M4, withContentChecksum true, withBlockChecksum true, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip[using LZ4 Parameters with BlockSize K256, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip[using LZ4 Parameters with BlockSize K64, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip[using LZ4 Parameters with BlockSize K64, withContentChecksum true, withBlockChecksum false, withBlockDependency true] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip[using LZ4 Parameters with BlockSize M1, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip[using LZ4 Parameters with BlockSize M4, withContentChecksum false, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip[using LZ4 Parameters with BlockSize M4, withContentChecksum true, withBlockChecksum false, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip[using LZ4 Parameters with BlockSize M4, withContentChecksum true, withBlockChecksum true, withBlockDependency false] PASS
-org.apache.commons.compress.compressors.lz4.XXHash32Test#verifyChecksum[0] PASS
-org.apache.commons.compress.compressors.lz4.XXHash32Test#verifyChecksum[1] PASS
-org.apache.commons.compress.compressors.lz4.XXHash32Test#verifyChecksum[2] PASS
+org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#biggerFileRoundtrip PASS
+org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#blaTarRoundtrip PASS
+org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip PASS
+org.apache.commons.compress.compressors.lz4.XXHash32Test#verifyChecksum PASS
 org.apache.commons.compress.compressors.lz77support.LZ77CompressorTest#blaExampleSmallerWindowSize PASS
 org.apache.commons.compress.compressors.lz77support.LZ77CompressorTest#blaExampleWithFullArrayAvailableForCompression PASS
 org.apache.commons.compress.compressors.lz77support.LZ77CompressorTest#blaExampleWithPrefillBiggerThanWindowSize PASS

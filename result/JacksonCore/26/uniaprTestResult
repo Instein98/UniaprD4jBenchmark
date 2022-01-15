@@ -197,6 +197,10 @@ com.fasterxml.jackson.core.json.JsonFactoryTest#testDisablingBufferRecycling PAS
 com.fasterxml.jackson.core.json.JsonFactoryTest#testFactoryFeatures PASS
 com.fasterxml.jackson.core.json.JsonFactoryTest#testGeneratorFeatures PASS
 com.fasterxml.jackson.core.json.JsonFactoryTest#testJsonWithFiles PASS
+com.fasterxml.jackson.core.json.JsonParserClosedCaseTest#testFalseReturnedOnClosedParserOnNextFieldNameSerializedString PASS
+com.fasterxml.jackson.core.json.JsonParserClosedCaseTest#testNullReturnedOnClosedParserOnNextFieldName PASS
+com.fasterxml.jackson.core.json.JsonParserClosedCaseTest#testNullReturnedOnClosedParserOnNextToken PASS
+com.fasterxml.jackson.core.json.JsonParserClosedCaseTest#testNullReturnedOnClosedParserOnNextValue PASS
 com.fasterxml.jackson.core.json.JsonReadContextTest#testReset PASS
 com.fasterxml.jackson.core.json.JsonReadContextTest#testSetCurrentName PASS
 com.fasterxml.jackson.core.json.JsonReadContextTest#testSetCurrentNameTwiceWithSameNameRaisesJsonParseException PASS

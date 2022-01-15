@@ -323,6 +323,7 @@ org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSetRuleTypeToRul
 org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSpeedCheck2 PASS
 org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSpeedCheck3 PASS
 org.apache.commons.codec.language.bm.BeiderMorseEncoderTest#testSpeedCheck PASS
+org.apache.commons.codec.language.bm.LanguageGuessingTest#testLanguageGuessing PASS
 org.apache.commons.codec.language.bm.PhoneticEngineRegressionTest#testCompatibilityWithOriginalVersion PASS
 org.apache.commons.codec.language.bm.PhoneticEngineRegressionTest#testSolrASHKENAZI PASS
 org.apache.commons.codec.language.bm.PhoneticEngineRegressionTest#testSolrGENERIC PASS

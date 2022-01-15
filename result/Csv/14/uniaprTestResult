@@ -3,6 +3,8 @@ org.apache.commons.csv.AssertionsTest#testNotNull PASS
 org.apache.commons.csv.bugs.JiraCsv164Test#testJiraCsv154_withCommentMarker PASS
 org.apache.commons.csv.bugs.JiraCsv164Test#testJiraCsv154_withHeaderComments PASS
 org.apache.commons.csv.bugs.JiraCsv167Test#parse PASS
+org.apache.commons.csv.CSVFileParserTest#testCSVFile PASS
+org.apache.commons.csv.CSVFileParserTest#testCSVUrl PASS
 org.apache.commons.csv.CSVFormatPredefinedTest#testDefault PASS
 org.apache.commons.csv.CSVFormatPredefinedTest#testExcel PASS
 org.apache.commons.csv.CSVFormatPredefinedTest#testMySQL PASS

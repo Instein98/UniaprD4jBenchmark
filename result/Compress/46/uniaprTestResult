@@ -1,3 +1,4 @@
+org.apache.commons.compress.ArchiveReadTest#testArchive PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesBSD PASS
 org.apache.commons.compress.archivers.ar.ArArchiveInputStreamTest#testReadLongNamesGNU PASS
 org.apache.commons.compress.archivers.ar.ArArchiveOutputStreamTest#testLongFileNamesCauseExceptionByDefault PASS
@@ -70,6 +71,8 @@ org.apache.commons.compress.archivers.jar.JarArchiveOutputStreamTest#testJarMark
 org.apache.commons.compress.archivers.JarTestCase#testJarArchiveCreation PASS
 org.apache.commons.compress.archivers.JarTestCase#testJarUnarchiveAll PASS
 org.apache.commons.compress.archivers.JarTestCase#testJarUnarchive PASS
+org.apache.commons.compress.archivers.LongPathTest#testArchive PASS
+org.apache.commons.compress.archivers.LongSymLinkTest#testArchive PASS
 org.apache.commons.compress.archivers.memory.MemoryArchiveTestCase#testReading PASS
 org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntryTest#shouldThrowIfNoAccessDateIsSet PASS
 org.apache.commons.compress.archivers.sevenz.SevenZArchiveEntryTest#shouldThrowIfNoCreationDateIsSet PASS
@@ -525,6 +528,9 @@ org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorOutputStreamTest#w
 org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorOutputStreamTest#writesCorrectSizeFor270ByteLengthLiteral PASS
 org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorOutputStreamTest#writesCorrectSizeFor273ByteLengthBackReference PASS
 org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorOutputStreamTest#writesCorrectSizeFor274ByteLengthBackReference PASS
+org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#biggerFileRoundtrip PASS
+org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#blaTarRoundtrip PASS
+org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip PASS
 org.apache.commons.compress.compressors.lz4.FactoryTest#blockRoundtripViaFactory PASS
 org.apache.commons.compress.compressors.lz4.FactoryTest#frameRoundtripViaFactory PASS
 org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStreamTest#readBlaDumpLz4 PASS
@@ -561,6 +567,10 @@ org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStreamTest#r
 org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStreamTest#skipsOverSkippableFrames PASS
 org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStreamTest#skipsOverTrailingSkippableFrames PASS
 org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStreamTest#testMatches PASS
+org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#biggerFileRoundtrip PASS
+org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#blaTarRoundtrip PASS
+org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorRoundtripTest#gzippedLoremIpsumRoundtrip PASS
+org.apache.commons.compress.compressors.lz4.XXHash32Test#verifyChecksum PASS
 org.apache.commons.compress.compressors.lz77support.LZ77CompressorTest#blaExampleSmallerWindowSize PASS
 org.apache.commons.compress.compressors.lz77support.LZ77CompressorTest#blaExampleWithFullArrayAvailableForCompression PASS
 org.apache.commons.compress.compressors.lz77support.LZ77CompressorTest#blaExampleWithPrefillBiggerThanWindowSize PASS

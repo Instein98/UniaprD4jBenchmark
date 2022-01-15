@@ -1,5 +1,7 @@
 org.apache.commons.csv.AssertionsTest#testNotNullNull PASS
 org.apache.commons.csv.AssertionsTest#testNotNull PASS
+org.apache.commons.csv.CSVFileParserTest#testCSVFile PASS
+org.apache.commons.csv.CSVFileParserTest#testCSVUrl PASS
 org.apache.commons.csv.CSVFormatPredefinedTest#testDefault PASS
 org.apache.commons.csv.CSVFormatPredefinedTest#testExcel PASS
 org.apache.commons.csv.CSVFormatPredefinedTest#testMySQL PASS

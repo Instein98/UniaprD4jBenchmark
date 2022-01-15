@@ -1,9 +1,4 @@
-org.apache.commons.csv.CSVFileParserTest#testCSVFile[0] PASS
-org.apache.commons.csv.CSVFileParserTest#testCSVFile[1] PASS
-org.apache.commons.csv.CSVFileParserTest#testCSVFile[2] PASS
-org.apache.commons.csv.CSVFileParserTest#testCSVFile[3] PASS
-org.apache.commons.csv.CSVFileParserTest#testCSVFile[4] PASS
-org.apache.commons.csv.CSVFileParserTest#testCSVFile[5] PASS
+org.apache.commons.csv.CSVFileParserTest#testCSVFile PASS
 org.apache.commons.csv.CSVFormatBuilderTest#testCommentStart PASS
 org.apache.commons.csv.CSVFormatBuilderTest#testCopiedFormatIsEqualToOriginal PASS
 org.apache.commons.csv.CSVFormatBuilderTest#testCopiedFormatWithChanges PASS
