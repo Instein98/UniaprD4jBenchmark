@@ -113,7 +113,7 @@ org.apache.commons.csv.CSVParserTest#testIgnoreCaseHeaderMapping PASS
 org.apache.commons.csv.CSVParserTest#testIgnoreEmptyLines PASS
 org.apache.commons.csv.CSVParserTest#testInvalidFormat PASS
 org.apache.commons.csv.CSVParserTest#testIterator PASS
-org.apache.commons.csv.CSVParserTest#testIteratorSequenceBreaking PASS
+org.apache.commons.csv.CSVParserTest#testIteratorSequenceBreaking FAIL
 org.apache.commons.csv.CSVParserTest#testLineFeedEndings PASS
 org.apache.commons.csv.CSVParserTest#testMappedButNotSetAsOutlook2007ContactExport PASS
 org.apache.commons.csv.CSVParserTest#testMultipleIterators PASS
@@ -136,6 +136,11 @@ org.apache.commons.csv.CSVParserTest#testSkipSetAltHeaders PASS
 org.apache.commons.csv.CSVParserTest#testSkipSetHeader PASS
 org.apache.commons.csv.CSVParserTest#testTrailingDelimiter PASS
 org.apache.commons.csv.CSVParserTest#testTrim PASS
+org.apache.commons.csv.CSVPrinterTest#testCloseBackwardCompatibility PASS
+org.apache.commons.csv.CSVPrinterTest#testCloseWithCsvFormatAutoFlushOff PASS
+org.apache.commons.csv.CSVPrinterTest#testCloseWithCsvFormatAutoFlushOn PASS
+org.apache.commons.csv.CSVPrinterTest#testCloseWithFlushOff PASS
+org.apache.commons.csv.CSVPrinterTest#testCloseWithFlushOn PASS
 org.apache.commons.csv.CSVPrinterTest#testDelimeterQuoted PASS
 org.apache.commons.csv.CSVPrinterTest#testDelimeterQuoteNONE PASS
 org.apache.commons.csv.CSVPrinterTest#testDelimiterEscaped PASS
@@ -191,6 +196,8 @@ org.apache.commons.csv.CSVPrinterTest#testPrinter7 PASS
 org.apache.commons.csv.CSVPrinterTest#testPrintNullValues PASS
 org.apache.commons.csv.CSVPrinterTest#testPrintOnePositiveInteger PASS
 org.apache.commons.csv.CSVPrinterTest#testPrint PASS
+org.apache.commons.csv.CSVPrinterTest#testPrintRecordsWithEmptyVector PASS
+org.apache.commons.csv.CSVPrinterTest#testPrintRecordsWithObjectArray PASS
 org.apache.commons.csv.CSVPrinterTest#testPrintRecordsWithResultSetOneRow PASS
 org.apache.commons.csv.CSVPrinterTest#testPrintToFileWithCharsetUtf16Be PASS
 org.apache.commons.csv.CSVPrinterTest#testPrintToFileWithDefaultCharset PASS
@@ -233,8 +240,17 @@ org.apache.commons.csv.ExtendedBufferedReaderTest#testReadChar PASS
 org.apache.commons.csv.ExtendedBufferedReaderTest#testReadLine PASS
 org.apache.commons.csv.ExtendedBufferedReaderTest#testReadLookahead1 PASS
 org.apache.commons.csv.ExtendedBufferedReaderTest#testReadLookahead2 PASS
+org.apache.commons.csv.issues.JiraCsv164Test#testJiraCsv154_withCommentMarker PASS
+org.apache.commons.csv.issues.JiraCsv164Test#testJiraCsv154_withHeaderComments PASS
 org.apache.commons.csv.issues.JiraCsv167Test#parse PASS
 org.apache.commons.csv.issues.JiraCsv198Test#test PASS
+org.apache.commons.csv.issues.JiraCsv203Test#testQuoteModeAllNonNull PASS
+org.apache.commons.csv.issues.JiraCsv203Test#testQuoteModeAll PASS
+org.apache.commons.csv.issues.JiraCsv203Test#testQuoteModeMinimal PASS
+org.apache.commons.csv.issues.JiraCsv203Test#testQuoteModeNonNumeric PASS
+org.apache.commons.csv.issues.JiraCsv203Test#testWithEmptyValues PASS
+org.apache.commons.csv.issues.JiraCsv203Test#testWithoutNullString PASS
+org.apache.commons.csv.issues.JiraCsv203Test#testWithoutQuoteMode PASS
 org.apache.commons.csv.LexerTest#testBackslashWithEscaping PASS
 org.apache.commons.csv.LexerTest#testBackslashWithoutEscaping PASS
 org.apache.commons.csv.LexerTest#testBackspace PASS

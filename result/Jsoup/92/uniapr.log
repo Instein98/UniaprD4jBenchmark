@@ -66,11 +66,11 @@ RUNNING: org.jsoup.nodes.TextNodeTest.testLeadNodesHaveNoChildren...
 RUNNING: org.jsoup.nodes.TextNodeTest.testTextBean... 
 RUNNING: org.jsoup.nodes.TextNodeTest.testSplitText... 
 RUNNING: org.jsoup.nodes.TextNodeTest.testBlank... 
-RUNNING: org.jsoup.parser.ParserTest.unescapeEntities... 
 RUNNING: org.jsoup.parser.ParserTest.unescapeEntitiesHandlesLargeInput... 
+RUNNING: org.jsoup.parser.ParserTest.unescapeEntities... 
+RUNNING: org.jsoup.parser.ParserSettingsTest.attributeCaseNormalization... 
 RUNNING: org.jsoup.parser.ParserSettingsTest.attributesCaseNormalization... 
 RUNNING: org.jsoup.parser.ParserSettingsTest.caseSupport... 
-RUNNING: org.jsoup.parser.ParserSettingsTest.attributeCaseNormalization... 
 RUNNING: org.jsoup.parser.TokeniserTest.handleLargeCdata... 
 RUNNING: org.jsoup.parser.TokeniserTest.handleLargeText... 
 RUNNING: org.jsoup.parser.TokeniserTest.handleLargeTitle... 
@@ -171,167 +171,167 @@ RUNNING: org.jsoup.select.SelectorTest.splitOnBr...
 RUNNING: org.jsoup.select.SelectorTest.matchTextAttributes... 
 RUNNING: org.jsoup.select.SelectorTest.findBetweenSpan... 
 RUNNING: org.jsoup.select.SelectorTest.and... 
+2022-01-16 12:22:00.344:INFO::main: Logging initialized @635ms
+2022-01-16 12:22:00.366:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.408:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:41437}
+2022-01-16 12:22:00.408:INFO:oejs.Server:main: Started @700ms
 RUNNING: org.jsoup.integration.ConnectTest.sendsRequestBody... 
-2022-01-15 13:49:59.385:INFO::main: Logging initialized @638ms
-2022-01-15 13:49:59.407:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.431:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:34453}
-2022-01-15 13:49:59.431:INFO:oejs.Server:main: Started @685ms
-2022-01-15 13:49:59.531:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.537:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.539:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:44933}
-2022-01-15 13:49:59.539:INFO:oejs.Server:main: Started @793ms
+2022-01-16 12:22:00.491:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.496:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.498:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:45167}
+2022-01-16 12:22:00.498:INFO:oejs.Server:main: Started @789ms
 RUNNING: org.jsoup.integration.ConnectTest.doesPut... 
-2022-01-15 13:49:59.543:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.545:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.547:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:33469}
-2022-01-15 13:49:59.547:INFO:oejs.Server:main: Started @800ms
+2022-01-16 12:22:00.502:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.504:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.505:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:33055}
+2022-01-16 12:22:00.506:INFO:oejs.Server:main: Started @797ms
 RUNNING: org.jsoup.integration.ConnectTest.doesGet... 
-2022-01-15 13:49:59.548:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.550:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.551:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:37031}
-2022-01-15 13:49:59.551:INFO:oejs.Server:main: Started @805ms
+2022-01-16 12:22:00.508:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.510:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.511:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:42071}
+2022-01-16 12:22:00.512:INFO:oejs.Server:main: Started @803ms
 RUNNING: org.jsoup.integration.ConnectTest.fetchURl... 
-2022-01-15 13:49:59.553:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.554:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.556:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:41627}
-2022-01-15 13:49:59.556:INFO:oejs.Server:main: Started @810ms
+2022-01-16 12:22:00.513:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.515:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.516:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:39841}
+2022-01-16 12:22:00.516:INFO:oejs.Server:main: Started @808ms
 RUNNING: org.jsoup.integration.ConnectTest.doesPost... 
-2022-01-15 13:49:59.557:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.558:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.559:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:37127}
-2022-01-15 13:49:59.559:INFO:oejs.Server:main: Started @813ms
+2022-01-16 12:22:00.518:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.520:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.521:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:42455}
+2022-01-16 12:22:00.522:INFO:oejs.Server:main: Started @813ms
 RUNNING: org.jsoup.integration.ConnectTest.canConnectToLocalServer... 
-2022-01-15 13:49:59.563:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.564:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.565:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:37645}
-2022-01-15 13:49:59.565:INFO:oejs.Server:main: Started @819ms
+2022-01-16 12:22:00.527:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.528:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.529:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:46793}
+2022-01-16 12:22:00.529:INFO:oejs.Server:main: Started @821ms
 RUNNING: org.jsoup.integration.ConnectTest.fetchURIWithWhitespace... 
-2022-01-15 13:49:59.566:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.568:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.569:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:43075}
-2022-01-15 13:49:59.569:INFO:oejs.Server:main: Started @822ms
+2022-01-16 12:22:00.531:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.532:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.533:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:39571}
+2022-01-16 12:22:00.533:INFO:oejs.Server:main: Started @825ms
 RUNNING: org.jsoup.integration.ConnectTest.exceptOnUnsupportedProtocol... 
-2022-01-15 13:49:59.569:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.570:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.571:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:34741}
-2022-01-15 13:49:59.572:INFO:oejs.Server:main: Started @825ms
+2022-01-16 12:22:00.534:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.536:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.537:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:34549}
+2022-01-16 12:22:00.537:INFO:oejs.Server:main: Started @828ms
 RUNNING: org.jsoup.integration.ConnectTest.throwsExceptionOn404... 
-2022-01-15 13:49:59.573:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.574:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.574:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:37309}
-2022-01-15 13:49:59.575:INFO:oejs.Server:main: Started @828ms
+2022-01-16 12:22:00.539:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.540:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.541:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:41365}
+2022-01-16 12:22:00.541:INFO:oejs.Server:main: Started @833ms
 RUNNING: org.jsoup.integration.ConnectTest.ignoresExceptionIfSoConfigured... 
-2022-01-15 13:49:59.576:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.577:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.577:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:34751}
-2022-01-15 13:49:59.578:INFO:oejs.Server:main: Started @831ms
+2022-01-16 12:22:00.543:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.544:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.545:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:44231}
+2022-01-16 12:22:00.545:INFO:oejs.Server:main: Started @837ms
 RUNNING: org.jsoup.integration.ConnectTest.doesPostMultipartWithoutInputstream... 
-2022-01-15 13:49:59.579:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.580:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.581:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:34699}
-2022-01-15 13:49:59.581:INFO:oejs.Server:main: Started @835ms
+2022-01-16 12:22:00.547:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.549:INFO:oejs.Server:main: jetty-9.2.28.v20190418
 RUNNING: org.jsoup.integration.ConnectTest.sendsRequestBodyJsonWithData... 
-2022-01-15 13:49:59.582:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.583:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.584:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:37421}
-2022-01-15 13:49:59.584:INFO:oejs.Server:main: Started @838ms
+2022-01-16 12:22:00.550:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:35713}
+2022-01-16 12:22:00.550:INFO:oejs.Server:main: Started @841ms
+2022-01-16 12:22:00.551:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.553:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.554:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:36775}
+2022-01-16 12:22:00.554:INFO:oejs.Server:main: Started @845ms
 RUNNING: org.jsoup.integration.ConnectTest.sendsRequestBodyJsonWithoutData... 
-2022-01-15 13:49:59.585:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.586:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.587:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:33023}
-2022-01-15 13:49:59.587:INFO:oejs.Server:main: Started @841ms
+2022-01-16 12:22:00.555:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.556:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.557:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:46027}
+2022-01-16 12:22:00.557:INFO:oejs.Server:main: Started @848ms
 RUNNING: org.jsoup.integration.ConnectTest.sendsRequestBodyWithUrlParams... 
-2022-01-15 13:49:59.588:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.589:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.590:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:42669}
-2022-01-15 13:49:59.590:INFO:oejs.Server:main: Started @844ms
+2022-01-16 12:22:00.558:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.560:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.561:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:46049}
+2022-01-16 12:22:00.562:INFO:oejs.Server:main: Started @853ms
 RUNNING: org.jsoup.integration.ConnectTest.postFiles... 
-2022-01-15 13:49:59.591:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.593:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.593:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:44739}
-2022-01-15 13:49:59.593:INFO:oejs.Server:main: Started @847ms
+2022-01-16 12:22:00.564:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.566:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.568:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:39965}
+2022-01-16 12:22:00.568:INFO:oejs.Server:main: Started @859ms
 RUNNING: org.jsoup.integration.ConnectTest.multipleParsesOkAfterBufferUp... 
-2022-01-15 13:49:59.595:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.596:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.597:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:40477}
-2022-01-15 13:49:59.597:INFO:oejs.Server:main: Started @850ms
+2022-01-16 12:22:00.571:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.573:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.574:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:33807}
+2022-01-16 12:22:00.574:INFO:oejs.Server:main: Started @865ms
 RUNNING: org.jsoup.integration.ConnectTest.bodyAfterParseThrowsValidationError... 
-2022-01-15 13:49:59.598:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.598:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.599:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:42817}
-2022-01-15 13:49:59.599:INFO:oejs.Server:main: Started @852ms
+2022-01-16 12:22:00.576:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.577:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.578:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:34403}
+2022-01-16 12:22:00.578:INFO:oejs.Server:main: Started @869ms
 RUNNING: org.jsoup.integration.ConnectTest.bodyAndBytesAvailableBeforeParse... 
-2022-01-15 13:49:59.600:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.600:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.601:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:37805}
-2022-01-15 13:49:59.601:INFO:oejs.Server:main: Started @855ms
+2022-01-16 12:22:00.579:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.580:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.581:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:41441}
+2022-01-16 12:22:00.582:INFO:oejs.Server:main: Started @873ms
 RUNNING: org.jsoup.integration.ConnectTest.parseParseThrowsValidates... 
-2022-01-15 13:49:59.602:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.603:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.604:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:33175}
-2022-01-15 13:49:59.604:INFO:oejs.Server:main: Started @857ms
+2022-01-16 12:22:00.583:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.584:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.585:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:42453}
+2022-01-16 12:22:00.585:INFO:oejs.Server:main: Started @877ms
 RUNNING: org.jsoup.integration.ConnectTest.multiCookieSet... 
-2022-01-15 13:49:59.604:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.605:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.606:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:42143}
-2022-01-15 13:49:59.606:INFO:oejs.Server:main: Started @860ms
+2022-01-16 12:22:00.586:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.588:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.590:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:34823}
+2022-01-16 12:22:00.590:INFO:oejs.Server:main: Started @881ms
 RUNNING: org.jsoup.integration.ConnectTest.supportsDeflate... 
-2022-01-15 13:49:59.612:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.614:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.615:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:37725}
-2022-01-15 13:49:59.615:INFO:oejs.Server:main: Started @869ms
+2022-01-16 12:22:00.597:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.599:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.600:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:36533}
+2022-01-16 12:22:00.600:INFO:oejs.Server:main: Started @891ms
 RUNNING: org.jsoup.integration.ConnectTest.handlesEmptyStreamDuringParseRead... 
-2022-01-15 13:49:59.727:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.730:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.731:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:38189}
-2022-01-15 13:49:59.732:INFO:oejs.Server:main: Started @985ms
+2022-01-16 12:22:00.714:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.716:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.718:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:45673}
+2022-01-16 12:22:00.718:INFO:oejs.Server:main: Started @1009ms
 RUNNING: org.jsoup.integration.ConnectTest.handlesEmtpyStreamDuringBufferedRead... 
-2022-01-15 13:49:59.733:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.735:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.736:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:42025}
-2022-01-15 13:49:59.736:INFO:oejs.Server:main: Started @990ms
+2022-01-16 12:22:00.720:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.722:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.723:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:46757}
+2022-01-16 12:22:00.723:INFO:oejs.Server:main: Started @1015ms
 RUNNING: org.jsoup.integration.ConnectTest.handlesRedirect... 
-2022-01-15 13:49:59.750:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.752:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.754:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:38651}
-2022-01-15 13:49:59.754:INFO:oejs.Server:main: Started @1008ms
+2022-01-16 12:22:00.739:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.742:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.744:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:39487}
+2022-01-16 12:22:00.744:INFO:oejs.Server:main: Started @1035ms
 RUNNING: org.jsoup.integration.ConnectTest.handlesEmptyRedirect... 
-2022-01-15 13:49:59.756:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.758:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.760:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:43579}
-2022-01-15 13:49:59.760:INFO:oejs.Server:main: Started @1013ms
+2022-01-16 12:22:00.747:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.749:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.751:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:32835}
+2022-01-16 12:22:00.751:INFO:oejs.Server:main: Started @1042ms
 RUNNING: org.jsoup.integration.ConnectTest.doesNotPostFor302... 
-2022-01-15 13:49:59.762:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.764:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.773:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:46543}
-2022-01-15 13:49:59.773:INFO:oejs.Server:main: Started @1027ms
+2022-01-16 12:22:00.753:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.754:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.767:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:39859}
+2022-01-16 12:22:00.767:INFO:oejs.Server:main: Started @1058ms
 RUNNING: org.jsoup.integration.ConnectTest.doesPostFor307... 
-2022-01-15 13:49:59.775:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.776:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.777:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:36659}
-2022-01-15 13:49:59.777:INFO:oejs.Server:main: Started @1031ms
+2022-01-16 12:22:00.769:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.771:INFO:oejs.Server:main: jetty-9.2.28.v20190418
 RUNNING: org.jsoup.integration.ConnectTest.getUtf8Bom... 
-2022-01-15 13:49:59.787:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.789:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.790:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:35341}
-2022-01-15 13:49:59.790:INFO:oejs.Server:main: Started @1044ms
+2022-01-16 12:22:00.772:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:43871}
+2022-01-16 12:22:00.772:INFO:oejs.Server:main: Started @1064ms
+2022-01-16 12:22:00.784:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.786:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.788:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:41525}
+2022-01-16 12:22:00.788:INFO:oejs.Server:main: Started @1079ms
 RUNNING: org.jsoup.integration.ConnectTest.testBinaryThrowsExceptionWhenTypeIgnored... 
-2022-01-15 13:49:59.792:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.793:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.795:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:43689}
-2022-01-15 13:49:59.795:INFO:oejs.Server:main: Started @1048ms
+2022-01-16 12:22:00.790:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.793:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.794:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:40871}
+2022-01-16 12:22:00.794:INFO:oejs.Server:main: Started @1086ms
 RUNNING: org.jsoup.integration.ConnectTest.testBinaryResultThrows... 
-2022-01-15 13:49:59.796:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.798:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.799:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:35805}
-2022-01-15 13:49:59.799:INFO:oejs.Server:main: Started @1053ms
+2022-01-16 12:22:00.796:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.799:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.801:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:37899}
+2022-01-16 12:22:00.801:INFO:oejs.Server:main: Started @1092ms
 RUNNING: org.jsoup.integration.ConnectTest.testBinaryContentTypeThrowsException... 
-2022-01-15 13:49:59.801:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
-2022-01-15 13:49:59.803:INFO:oejs.Server:main: jetty-9.2.28.v20190418
-2022-01-15 13:49:59.804:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:37063}
-2022-01-15 13:49:59.804:INFO:oejs.Server:main: Started @1058ms
+2022-01-16 12:22:00.804:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.805:INFO:oejs.Server:main: jetty-9.2.28.v20190418
+2022-01-16 12:22:00.807:INFO:oejs.ServerConnector:main: Started ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:42451}
+2022-01-16 12:22:00.807:INFO:oejs.Server:main: Started @1098ms
 RUNNING: org.jsoup.integration.ConnectTest.canFetchBinaryAsBytes... 
-2022-01-15 13:49:59.806:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
+2022-01-16 12:22:00.809:INFO:oejs.ServerConnector:main: Stopped ServerConnector@4563e9ab{HTTP/1.1}{0.0.0.0:0}
 RUNNING: org.jsoup.nodes.AttributeTest.html... 
 RUNNING: org.jsoup.nodes.AttributeTest.testWithSupplementaryCharacterInAttributeKeyAndValue... 
 RUNNING: org.jsoup.nodes.AttributeTest.validatesKeysNotEmpty... 
@@ -679,6 +679,8 @@ RUNNING: org.jsoup.integration.ParseTest.testNytArticle...
 RUNNING: org.jsoup.integration.ParseTest.testYahooArticle... 
 RUNNING: org.jsoup.integration.ParseTest.testLowercaseUtf8Charset... 
 RUNNING: org.jsoup.select.CssTest.firstOfType... 
+RUNNING: org.jsoup.select.CssTest.onlyChild... 
+RUNNING: org.jsoup.select.CssTest.onlyOfType... 
 RUNNING: org.jsoup.select.CssTest.nthChild_simple... 
 RUNNING: org.jsoup.select.CssTest.lastOfType... 
 RUNNING: org.jsoup.select.CssTest.lastChild... 
@@ -691,8 +693,6 @@ RUNNING: org.jsoup.select.CssTest.nthChild_advanced...
 RUNNING: org.jsoup.select.CssTest.nthOfType_advanced... 
 RUNNING: org.jsoup.select.CssTest.nthLastChild_advanced... 
 RUNNING: org.jsoup.select.CssTest.nthLastOfType_advanced... 
-RUNNING: org.jsoup.select.CssTest.onlyChild... 
-RUNNING: org.jsoup.select.CssTest.onlyOfType... 
 RUNNING: org.jsoup.select.CssTest.root... 
 RUNNING: org.jsoup.select.CssTest.empty... 
 RUNNING: org.jsoup.parser.AttributeParseTest.canStartWithEq... 
@@ -786,11 +786,6 @@ RUNNING: org.jsoup.select.ElementsTest.outerHtml...
 RUNNING: org.jsoup.select.ElementsTest.parents... 
 RUNNING: org.jsoup.select.ElementsTest.hasText... 
 RUNNING: org.jsoup.select.ElementsTest.traverse... 
-RUNNING: org.jsoup.select.ElementsTest.eachText... 
-RUNNING: org.jsoup.select.ElementsTest.eachAttr... 
-RUNNING: org.jsoup.select.ElementsTest.absAttr... 
-RUNNING: org.jsoup.select.ElementsTest.hasAbsAttr... 
-RUNNING: org.jsoup.select.ElementsTest.hasClassCaseInsensitive... 
 RUNNING: org.jsoup.select.ElementsTest.setHtml... 
 RUNNING: org.jsoup.select.ElementsTest.wrapDiv... 
 RUNNING: org.jsoup.select.ElementsTest.unwrapP... 
@@ -800,6 +795,11 @@ RUNNING: org.jsoup.select.ElementsTest.tagNameSet...
 RUNNING: org.jsoup.select.ElementsTest.forms... 
 RUNNING: org.jsoup.select.ElementsTest.classWithHyphen... 
 RUNNING: org.jsoup.select.ElementsTest.siblings... 
+RUNNING: org.jsoup.select.ElementsTest.eachText... 
+RUNNING: org.jsoup.select.ElementsTest.eachAttr... 
+RUNNING: org.jsoup.select.ElementsTest.absAttr... 
+RUNNING: org.jsoup.select.ElementsTest.hasAbsAttr... 
+RUNNING: org.jsoup.select.ElementsTest.hasClassCaseInsensitive... 
 RUNNING: org.jsoup.select.ElementsTest.remove... 
 RUNNING: org.jsoup.select.ElementsTest.classes... 
 RUNNING: org.jsoup.select.ElementsTest.wrap... 

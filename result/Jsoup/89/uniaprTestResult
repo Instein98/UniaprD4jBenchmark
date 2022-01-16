@@ -1,3 +1,4 @@
+2022-01-16 12:21:51.898:INFO:oejs.ServerConnector:main: Started ServerConnector@19bb089b{HTTP/1.1}{0.0.0.0:41879}org.jsoup.integration.ConnectTest#canConnectToLocalServer PASS
 org.jsoup.helper.DataUtilTest#discardsSpuriousByteOrderMark PASS
 org.jsoup.helper.DataUtilTest#discardsSpuriousByteOrderMarkWhenNoCharsetSet PASS
 org.jsoup.helper.DataUtilTest#firstMetaElementWithCharsetShouldBeUsedForDecoding PASS
@@ -43,7 +44,6 @@ org.jsoup.helper.W3CDomTest#simpleConversion PASS
 org.jsoup.helper.W3CDomTest#treatsUndeclaredNamespaceAsLocalName PASS
 org.jsoup.integration.ConnectTest#bodyAfterParseThrowsValidationError FAIL
 org.jsoup.integration.ConnectTest#bodyAndBytesAvailableBeforeParse FAIL
-org.jsoup.integration.ConnectTest#canConnectToLocalServer PASS
 org.jsoup.integration.ConnectTest#doesGet FAIL
 org.jsoup.integration.ConnectTest#doesNotPostFor302 FAIL
 org.jsoup.integration.ConnectTest#doesPostFor307 FAIL

@@ -1,5 +1,2 @@
 com.fasterxml.jackson.databind.deser.TestDateDeserialization#testISO8601MissingSeconds
 com.fasterxml.jackson.databind.deser.TestDateDeserialization#testISO8601PartialMilliseconds
-com.fasterxml.jackson.databind.interop.TestCglibUsage#testSimpleProxied
-com.fasterxml.jackson.databind.interop.TestGroovyBeans#testSimpleDeserialization
-com.fasterxml.jackson.databind.interop.TestGroovyBeans#testSimpleSerialization

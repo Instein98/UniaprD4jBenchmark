@@ -486,12 +486,12 @@ com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testUnk
 com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testUnknownHandlingIgnoreWithHandlerAndObjectReader PASS
 com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testUnknownHandlingIgnoreWithHandler PASS
 com.fasterxml.jackson.databind.filter.TestUnknownPropertyDeserialization#testWithClassIgnore PASS
-com.fasterxml.jackson.databind.interop.TestCglibUsage#testSimpleProxied FAIL
+com.fasterxml.jackson.databind.interop.TestCglibUsage#testSimpleProxied PASS
 com.fasterxml.jackson.databind.interop.TestExternalizable#testSerializeAsExternalizable PASS
 com.fasterxml.jackson.databind.interop.TestFormatDetection#testInvalid PASS
 com.fasterxml.jackson.databind.interop.TestFormatDetection#testSimpleWithJSON PASS
-com.fasterxml.jackson.databind.interop.TestGroovyBeans#testSimpleDeserialization FAIL
-com.fasterxml.jackson.databind.interop.TestGroovyBeans#testSimpleSerialization FAIL
+com.fasterxml.jackson.databind.interop.TestGroovyBeans#testSimpleDeserialization PASS
+com.fasterxml.jackson.databind.interop.TestGroovyBeans#testSimpleSerialization PASS
 com.fasterxml.jackson.databind.interop.TestHibernate#testHibernateCglib PASS
 com.fasterxml.jackson.databind.interop.TestJDKProxy#testSimple PASS
 com.fasterxml.jackson.databind.introspect.TestAnnotationMerging#testSharedNamesFromGetterToSetter PASS
