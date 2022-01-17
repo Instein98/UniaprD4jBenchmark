@@ -54,7 +54,7 @@ org.jsoup.integration.ConnectTest#doesPut PASS
 org.jsoup.integration.ConnectTest#exceptOnUnsupportedProtocol PASS
 org.jsoup.integration.ConnectTest#fetchURIWithWihtespace PASS
 org.jsoup.integration.ConnectTest#fetchURl PASS
-org.jsoup.integration.ConnectTest#getUtf8Bom FAIL
+org.jsoup.integration.ConnectTest#getUtf8Bom PASS
 org.jsoup.integration.ConnectTest#handlesEmptyRedirect PASS
 org.jsoup.integration.ConnectTest#handlesEmptyStreamDuringParseRead PASS
 org.jsoup.integration.ConnectTest#handlesEmtpyStreamDuringBufferedRead PASS

@@ -1,4 +1,3 @@
-org.jsoup.integration.ConnectTest#getUtf8Bom
 org.jsoup.integration.ConnectTest#testBinaryResultThrows
 org.jsoup.integration.ConnectTest#testBinaryThrowsExceptionWhenTypeIgnored
 org.jsoup.integration.ParseTest#testBinaryThrowsException

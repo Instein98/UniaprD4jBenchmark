@@ -49,6 +49,8 @@ for proj in `ls projects_2.0`; do
             sed -i 's/Deflateservlet.Url/TestServer.checkAndFixUrl(&)/g' src/test/java/org/jsoup/integration/ConnectTest.java
             sed -i 's/InterruptedServlet.Url/TestServer.checkAndFixUrl(&)/g' src/test/java/org/jsoup/integration/ConnectTest.java
             sed -i 's/RedirectServlet.Url/TestServer.checkAndFixUrl(&)/g' src/test/java/org/jsoup/integration/ConnectTest.java
+            sed -i 's/SlowRider.Url/TestServer.checkAndFixUrl(&)/g' src/test/java/org/jsoup/integration/ConnectTest.java
+            sed -i 's/FileServlet.Url/TestServer.checkAndFixUrl(&)/g' src/test/java/org/jsoup/integration/ConnectTest.java
             sed -i 's/return Url + path;/return TestServer.checkAndFixUrl(Url) + path;/g' src/test/java/org/jsoup/integration/servlets/FileServlet.java
             echo
         fi

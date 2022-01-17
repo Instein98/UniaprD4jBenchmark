@@ -96,7 +96,8 @@ for proj in `ls projects_2.0`; do
             #    echo mvn test-compile failed!
             #fi
             echo running uniapr for $proj-$id
-            mvn org.uniapr:uniapr-plugin:profiler-only:validate -DrestartJVM=true -Dd4jAllTestsFile=$pwd/d4j_projects/$proj/$id/all_tests -Ddebug=true -l uniapr.log
+            # Gson-1 needs TZ=America/Los_Angeles to be consistent
+            TZ=America/Los_Angeles mvn org.uniapr:uniapr-plugin:profiler-only:validate -DrestartJVM=true -Dd4jAllTestsFile=$pwd/d4j_projects/$proj/$id/all_tests -Ddebug=true -l uniapr.log
         #else
         #    echo uniapr.log already exists, skip running uniapr
         #fi
