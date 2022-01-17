@@ -1,10 +1,1 @@
-org.jsoup.integration.ConnectTest#doesGet
-org.jsoup.integration.ConnectTest#doesPut
-org.jsoup.integration.ConnectTest#fetchURIWithWihtespace
-org.jsoup.integration.ConnectTest#fetchURl
-org.jsoup.integration.ConnectTest#postFiles
-org.jsoup.integration.ConnectTest#sendsRequestBody
-org.jsoup.integration.ConnectTest#sendsRequestBodyJsonWithData
-org.jsoup.integration.ConnectTest#sendsRequestBodyJsonWithoutData
-org.jsoup.integration.ConnectTest#sendsRequestBodyWithUrlParams
 org.jsoup.parser.HtmlParserTest#handlesDeepStack

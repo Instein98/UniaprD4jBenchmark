@@ -716,5 +716,5 @@ com.google.gson.UpperCaseNamingPolicyTest#testAllUpperCase PASS
 com.google.gson.UpperCaseNamingPolicyTest#testMixedCase PASS
 com.google.gson.VersionExclusionStrategyTest#testClassAndFieldAreAheadInVersion PASS
 com.google.gson.VersionExclusionStrategyTest#testClassAndFieldAreAtSameVersion PASS
+com.google.gson.VersionExclusionStrategyTest#testClassAndFieldAreBehindInVersion PASS
 com.google.gson.VersionExclusionStrategyTest#testDisallowNegativeValuesAndFailFast PASS
-WARNING: Ovcom.google.gson.VersionExclusionStrategyTest#testClassAndFieldAreBehindInVersion PASS

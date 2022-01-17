@@ -1,0 +1,15 @@
+diff -crB src-orig/test/java/org/jsoup/integration/TestServer.java src/test/java/org/jsoup/integration/TestServer.java
+*** src-orig/test/java/org/jsoup/integration/TestServer.java	2022-01-16 16:48:50.000000000 -0600
+--- src/test/java/org/jsoup/integration/TestServer.java	2022-01-16 16:44:25.000000000 -0600
+***************
+*** 56,59 ****
+--- 56,64 ----
+              return "http://localhost:" + port + path;
+          }
+      }
++ 
++     public static String checkAndFixUrl(String url){
++         int port = ((ServerConnector) jetty.getConnectors()[0]).getLocalPort();
++         return url.substring(0, url.lastIndexOf(':') + 1) + port + url.substring(url.lastIndexOf('/'));
++     }
+  }
